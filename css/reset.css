@@ -110,6 +110,20 @@ h2 {
 	background-image: url("/imgs/link-arrow.svg")
 }
 
+@media screen and (max-width: 1500px)
+{
+	.container_md {
+		width: 1024px;
+	}
+}
+
+@media screen and (max-width: 1024px)
+{
+	.container_md {
+		width: 768px;
+	}
+}
+
 @media screen and (max-width: 768px)
 {
 	p {
@@ -132,5 +146,9 @@ h2 {
 		height: 8px;
 		background-repeat: no-repeat;
 		background-size: contain;
+	}
+
+	.container_md {
+		width: 100%;
 	}
 }

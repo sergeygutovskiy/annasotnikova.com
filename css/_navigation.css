@@ -138,7 +138,7 @@ nav {
 	width: 30%;
 	background-color: #C21818;
 
-	transition: transform 300ms linear;
+	transition: transform 250ms linear;
 }
 
 .nav-menu--active {

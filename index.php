@@ -120,7 +120,7 @@
 	</section>
 
 	<section class="announcements">
-		<div class="container"><h2>Анонсы</h2></div>
+		<div class="container container_md"><h2>Анонсы</h2></div>
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
 				<article class="swiper-slide">
@@ -128,7 +128,10 @@
 						<img src="/imgs/announcements-example.jpg">
 					</div>
 					<span class="announcements__category">Онлайн-семинар</span>
-					<span class="announcements__title">Ресторанный бизнес 2020: новая реальность</span>
+					<span class="announcements__title">
+						Ресторанный бизнес 2020: новая реальность
+						Ресторанный бизнес 2020: новая реальность
+					</span>
 					<span class="announcements__date">16 июля, 15:00</span>
 				</article>
 				<article class="swiper-slide">
@@ -165,12 +168,25 @@
 				</article>
 			</div>
 		</div>
+		<div class="announcements__buttons container container_md">
+			<div class="announcements__button announcements__button--prev"></div>
+			<div class="announcements__button announcements__button--next"></div>
+		</div>
 	</section>
 
 	<script>
 		let announcements = new Swiper(".swiper-container", {
 			slidesPerView: 'auto',
-			spaceBetween: 32,
+			spaceBetween: 16,
+			navigation: {
+				nextEl: '.announcements__button--next',
+				prevEl: '.announcements__button--prev'
+			},
+			breakpoints: {
+				769: {
+					spaceBetween: 32,
+				}
+			}
 		});
 	</script>
 
