@@ -194,29 +194,60 @@
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
 				<article class="swiper-slide">
-					<div class="books__image-container">
-						<img src="/imgs/announcements-example.jpg">
-					</div>		
-					<div class="books__content">
-						<h2>Учебник официанта</h2>
-						<span class="books__author">Анна Сотникова</span>
-						<span class="books__price">420 ₽</span>
-						<p>
-							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-						</p>
-					</div>			
-					<div class="books__menu">
-						<div class="books__menu-item">
-							<img src="">
-							<span>Предзаказ</span>
+					<div class="book">
+						<div class="book__image-container">
+							<img src="/imgs/announcements-example.jpg">
+						</div>		
+						<div class="book__content">
+							<h2>Учебник официанта</h2>
+							<span class="book__author">Анна Сотникова</span>
+							<span class="book__price">420 ₽</span>
+							<p>
+								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+							</p>
+						</div>			
+						<div class="book__menu">
+							<div class="book__menu-item">
+								<img src="/imgs/cart.svg">
+								<span>Предзаказ</span>
+							</div>
+							<div class="book__menu-item">
+								<img src="/imgs/plus.svg">
+								<span>Узнать больше</span>
+							</div>
+							<div class="book__menu-item">
+								<img src="/imgs/book-icon.svg">
+								<span>Читать</span>
+							</div>
 						</div>
-						<div class="books__menu-item">
-							<img src="">
-							<span>Узнать больше</span>
-						</div>
-						<div class="books__menu-item">
-							<img src="">
-							<span>Читать</span>
+					</div>
+				</article>
+				<article class="swiper-slide">
+					<div class="book">
+						<div class="book__image-container">
+							<img src="/imgs/announcements-example.jpg">
+						</div>		
+						<div class="book__content">
+							<h2>Учебник официанта</h2>
+							<span class="book__author">Анна Сотникова</span>
+							<span class="book__price">420 ₽</span>
+							<p>
+								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+							</p>
+						</div>			
+						<div class="book__menu">
+							<div class="book__menu-item">
+								<img src="/imgs/cart.svg">
+								<span>Предзаказ</span>
+							</div>
+							<div class="book__menu-item">
+								<img src="/imgs/plus.svg">
+								<span>Узнать больше</span>
+							</div>
+							<div class="book__menu-item">
+								<img src="/imgs/book-icon.svg">
+								<span>Читать</span>
+							</div>
 						</div>
 					</div>
 				</article>
@@ -226,8 +257,88 @@
 
 	<script>
 		let books = new Swiper(".books .swiper-container", {
-			slidesPerView: 'auto',
+			slidesPerView: 1,
 			centeredSlides: true
+		});
+	</script>
+
+	<section class="projects">
+		<div class="container container_md"><h2>Проекты</h2></div>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<article class="swiper-slide project">
+					<img src="/imgs/announcements-example.jpg">
+					<div class="project__panel">
+						<span class="project__title">Sota school</span>
+						<p class="project__desc">
+							Ut enim ad minim veniam quis
+						</p>
+					</div>
+				</article>
+				<article class="swiper-slide project">
+					<img src="/imgs/announcements-example.jpg">
+					<div class="project__panel">
+						<span class="project__title">Sota school</span>
+						<p class="project__desc">
+							Ut enim ad minim veniam quis
+							Ut enim ad minim veniam quis
+						</p>
+					</div>
+				</article>
+				<article class="swiper-slide project">
+					<img src="/imgs/announcements-example.jpg">
+					<div class="project__panel">
+						<span class="project__title">Sota school</span>
+						<p class="project__desc">
+							Ut enim ad minim veniam quis
+						</p>
+					</div>
+				</article>
+				<article class="swiper-slide project">
+					<img src="/imgs/announcements-example.jpg">
+					<div class="project__panel">
+						<span class="project__title">Sota school</span>
+						<p class="project__desc">
+							Ut enim ad minim veniam quis
+						</p>
+					</div>
+				</article>
+				<article class="swiper-slide project">
+					<img src="/imgs/announcements-example.jpg">
+					<div class="project__panel">
+						<span class="project__title">Sota school</span>
+						<p class="project__desc">
+							Ut enim ad minim veniam quis
+						</p>
+					</div>
+				</article>
+				<article class="swiper-slide project">
+					<img src="/imgs/announcements-example.jpg">
+					<div class="project__panel">
+						<span class="project__title">Sota school</span>
+						<p class="project__desc">
+							Ut enim ad minim veniam quis
+						</p>
+					</div>
+				</article>
+				<article class="swiper-slide project">
+					<img src="/imgs/announcements-example.jpg">
+					<div class="project__panel">
+						<span class="project__title">Sota school</span>
+						<p class="project__desc">
+							Ut enim ad minim veniam quis
+						</p>
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<script>
+		let projects = new Swiper(".projects .swiper-container", {
+			slidesPerView: 'auto',
+			spaceBetween: 32,
+			initialSlide: 1
 		});
 	</script>
 

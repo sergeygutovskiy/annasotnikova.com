@@ -218,8 +218,22 @@
 	}
 } 
 
+.books {
+	margin-top: 64px;
+}
+
 .books .swiper-slide {
+	padding-left: 100px;
+}
+
+.books .swiper-wrapper {
+	padding-bottom: 32px;
+}
+
+.book {
+	margin: auto;
 	width: 800px;
+	height: 400px;
 	display: flex;
 
 	border: 0.5px solid #E8E9E9;
@@ -227,12 +241,21 @@
 	border-radius: 32px;
 }
 
-.books__content {
+.book__content {
 	padding-top: 52px;
 	padding-left: 52px;
 }
 
-.books .swiper-slide .books__author {
+.book__content p {
+	margin-top: 24px;
+	padding-right: 24px;
+}
+
+.book h2 {
+	text-transform: inherit;
+}
+
+.book__author {
 	margin-top: 16px;
 	display: block;
 	font-size: 18px;
@@ -240,22 +263,25 @@
 	color: var(--grey-color);
 }
 
-.books .swiper-slide .books__price {
+.book__price {
 	margin-top: 8px;
 	display: block;
 	font-weight: 500;
 	font-size: 18px;
 }
 
-.books__image-container {
+.book__image-container {
 	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+
 	flex-basis: 100px;
-    flex-grow: 0;
-    flex-shrink: 0;
+	flex-grow: 0;
+	flex-shrink: 0;
 	height: 300px;
 }
 
-.books__image-container img {
+.book__image-container img {
 	position: absolute;
 	top: 0;
 	left: -100%;
@@ -264,9 +290,234 @@
 	height: 100%;
 	border-radius: 12px;
 	object-fit: cover;
+
+	/*filter: drop-shadow(0px 15px 40px rgba(8, 24, 81, 0.1));*/
 }
 
-.books__menu {
+.book__menu {
+	position: relative;
+
 	display: flex;
-	flex-direction: column-reverse;
+	flex-direction: column;
+	justify-content: space-around;
+
+	flex-basis: 140px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.book__menu::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	width: 0.5px;
+	height: 100%;
+	background-color: #CDCDCD;
+
+}
+
+.book__menu-item {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.book__menu-item img {
+	display: block;
+	width: 32px;
+	height: 32px;
+	object-fit: contain;	
+}
+
+.book__menu-item span {
+	margin-top: 8px;
+	display: block;
+
+	font-size: 14px;
+	color: #777776;
+}
+
+@media screen and (max-width: 1024px)
+{
+	.book {
+		width: calc(100% - 52px * 2);
+	}
+} 
+
+@media screen and (max-width: 768px)
+{
+	.books {
+		margin-top: 40px;
+	}
+
+	.books .swiper-wrapper {
+		padding-top: 56px;
+	}
+
+	.books .swiper-slide {
+		padding-left: 0;
+	}
+
+	.book {
+		flex-direction: column;
+
+		width: calc(100% - 24px * 2);
+		height: auto;
+		border-radius: 16px;
+	}
+
+	.book__image-container {
+		top: 0;
+		transform: none;
+	
+		height: 244px;
+		text-align: center;
+	}
+
+	.book__image-container img {
+		position: relative;
+		left: auto;
+		top: -56px;
+
+		width: 200px;
+		height: 300px;
+	}
+
+	.book__content {
+		padding: 24px;
+	}
+
+	.book__content p {
+		margin-top: 8px;
+		padding-right: 0;
+	}
+
+	.book__author {
+		margin-top: 8px;
+		font-size: 14px;
+	}
+
+	.book__price {
+		font-size: 14px;
+	}
+
+	.book__menu {
+		flex-direction: row;
+		border-left: 0;
+		flex-basis: auto;
+		padding: 16px 0;
+	}
+
+	.book__menu::before {
+		left: 0;
+		top: 0;
+
+		height: 0.5px;
+		width: 100%;
+	}
+
+	.book__menu-item {
+		flex: 1 1 0px;
+	}
+
+	.book__menu-item img {
+		width: 24px;
+		height: 24px;
+	}
+
+	.book__menu-item span {
+		font-size: 10px;
+	}
+} 
+
+.projects {
+	margin-top: 32px;
+}
+
+.projects .swiper-container {
+	margin-top: 24px;
+	padding-left: 230px;
+}
+
+.project {
+	position: relative;
+	width: 460px;
+	height: 240px;
+}
+
+.project img {
+	position: absolute;
+	
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+.project__panel {
+	position: absolute;
+	left: calc(50% - (100% - 24px * 2) / 2);
+	bottom: 0;
+
+	transform: translateY(100%);
+	transition: transform 150ms linear;
+
+	width: calc(100% - 24px * 2);
+	padding-top: 32px;
+	padding-bottom: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+
+	text-align: center;
+	border-radius: 8px;
+	background-color: white;	
+}
+
+.project:hover .project__panel {
+	transform: translateY(8px);
+}
+
+.project__title {
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.project__desc {
+	margin-top: 8px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+@media screen and (max-width: 768px)
+{
+	.project {
+		position: relative;
+		width: calc(100% - 24px);
+		height: auto;	
+	}
+
+	.project::after {
+		content: '';
+		display: block;
+		padding-bottom: 50%;
+	}
+
+	.projects .swiper-container {
+		padding-left: 24px;
+	}
+
+	.project__panel {
+		padding-top: 16px;
+		padding-bottom: 8px;
+	}
+
+	.project__title {
+		font-size: 14px;
+	}
+
+	.project__desc {
+		font-size: 12px;
+	}
 }
