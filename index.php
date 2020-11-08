@@ -342,4 +342,65 @@
 		});
 	</script>
 
+	<section class="contacts container container_md">
+		<div class="contacts__container">
+			<div class="contacts__info">
+				<h2>индивидуальные <br> и корпоративные консультации</h2>
+				<p>
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+				</p>
+			</div>
+			<form class="contacts__form">
+				<input placeholder="Имя">
+				<input placeholder="Фамилия">
+				<input placeholder="Контактный телефон">
+				<input placeholder="Почта">
+				<button>Отправить</button>
+			</form>			
+		</div>
+	</section>
+
+	<footer>
+		<div class="container container_md">			
+			<div class="footer__content">
+				<div class="footer__left">
+					<ul>
+						<li><a href="">Главная</a></li>
+						<li><a href="">Об авторе</a></li>
+						<li><a href="">Книги</a></li>
+						<li><a href="">Проекты</a></li>
+					</ul>
+					<ul>
+						<li><a href="">Блог</a></li>
+						<li><a href="">Пресса</a></li>
+						<li><a href="">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="footer__center">
+					<a class="footer__number" href="">+7 (900) 000-00-00</a>
+					<a class="footer__email" href="">annasotnikova2803@gmail.com</a>
+					<span class="footer__social-label">Социальные сети:</span>
+					<div class="footer__social-links">
+						<a href=""><img src="/imgs/social/inst.png"></a>
+						<a href=""><img src="/imgs/social/inst.png"></a>
+						<a href=""><img src="/imgs/social/inst.png"></a>
+						<a href=""><img src="/imgs/social/inst.png"></a>
+						<a href=""><img src="/imgs/social/inst.png"></a>
+						<a href=""><img src="/imgs/social/inst.png"></a>
+					</div>
+				</div>
+				<div class="footer-mailing">
+					<span class="footer-mailing__title">Подписаться на новости:</span>
+					<form>
+						<input class="footer-mailing__input" placeholder="e-mail">
+						<button class="footer-mailing__button"></button>
+					</form>
+					<p class="footer-mailing__text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
 </body>
