@@ -36,8 +36,8 @@ ul {
 }
 
 p {
-	line-height: 22px;
-	letter-spacing: 0.02em;
+	/*line-height: 22px;*/
+	/*letter-spacing: 0.02em;*/
 }
 
 a {
@@ -110,6 +110,59 @@ h2 {
 	background-image: url("/imgs/link-arrow.svg")
 }
 
+.pagination {
+	margin-top: 24px;
+	display: flex;
+}
+
+.pagination__button {
+	width: 47px;
+	height: 12px;
+	background-image: url("/imgs/link-arrow.svg");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.pagination__button--prev {
+	margin-right: 16px;
+	transform: rotateY(180deg);
+}
+
+.pagination__button--next {
+	margin-left: 16px;
+}
+
+.pagination__info {
+	width: auto;
+	display: flex;
+
+	font-size: 11px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--grey-color);
+}
+
+.pagination__info span {
+	display: inline-block;
+	width: 14px;
+}
+
+.pagination__info span:first-child {
+	text-align: right;
+}
+
+.pagination__info div {
+	margin: 0 16px;
+	width: 15px;
+	height: 1px;
+	background-color: var(--black-color);
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
 @media screen and (max-width: 1500px)
 {
 	.container_md {
@@ -127,8 +180,8 @@ h2 {
 @media screen and (max-width: 768px)
 {
 	p {
-		font-size: 12px;
-		line-height: 20px;
+		/*font-size: 12px;*/
+		/*line-height: 20px;*/
 	}
 
 	h2 {
@@ -150,5 +203,9 @@ h2 {
 
 	.container_md {
 		width: 100%;
+	}
+
+	.pagination {
+		justify-content: center;
 	}
 }

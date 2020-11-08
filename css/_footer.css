@@ -114,8 +114,8 @@ footer {
 .footer-mailing__text {
 	margin-top: 16px;
 
-	width: 300px;
-	font-style: 11px;
+	max-width: 300px;
+	font-size: 11px;
 	line-height: 16px;
 	color: #55555A;
 }
@@ -148,6 +148,7 @@ footer {
 {
 	footer {
 		padding-top: 24px;
+		padding-bottom: 24px;
 	}
 
 	.footer__content {

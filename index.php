@@ -342,6 +342,124 @@
 		});
 	</script>
 
+	<section class="blog container container_md">
+		<h2>Блог</h2>
+		<div class="blog__content">
+			<article class="blog-item">
+				<div class="blog-item__image-container">
+					<img src="/imgs/announcements-example.jpg">
+				</div>
+				<span class="blog-item__title">Lorem ipsum dolor sit amet</span>
+				<p class="blog-item__info">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+				</p>
+			</article>
+			<article class="blog-item">
+				<div class="blog-item__image-container">
+					<img src="/imgs/announcements-example.jpg">
+				</div>
+				<span class="blog-item__title">Lorem ipsum dolor sit amet</span>
+				<p class="blog-item__info">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+				</p>
+			</article>
+			<article class="blog-item">
+				<div class="blog-item__image-container">
+					<img src="/imgs/announcements-example.jpg">
+				</div>
+				<span class="blog-item__title">Lorem ipsum dolor sit amet</span>
+				<p class="blog-item__info">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+				</p>
+			</article>
+			<article class="blog-item">
+				<div class="blog-item__image-container">
+					<img src="/imgs/announcements-example.jpg">
+				</div>
+				<span class="blog-item__title">Lorem ipsum dolor sit amet</span>
+				<p class="blog-item__info">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+				</p>
+			</article>
+		</div>
+	</section>
+
+	<section class="products container container_md">
+		<h2>Продукты</h2>
+		<div class="products__content">
+			<div class="products__images swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="/imgs/announcements-example.jpg"></div>
+					<div class="swiper-slide"><img src="/imgs/sotnikova/standing.jpg"></div>
+					<div class="swiper-slide"><img src="/imgs/announcements-example.jpg"></div>
+				</div>
+			</div>
+			<div class="products__info swiper-container">
+				<div class="swiper-wrapper">								
+					<article class="product swiper-slide">
+						<span class="product__title">SotA School</span>
+						<p class="product__info">
+							Образовательный проект Анны Сотниковой, эксперта в ресторанном бизнесе. Лекции в SOTA school читают практикующие шеф-повара, управляющие ресторанов, маркетологи, финансисты и другие мастера, создающие первоклассный сервис. Запуск школы в 2021 г.
+						</p>
+					</article>
+					<article class="product swiper-slide">
+						<span class="product__title">SotA School</span>
+						<p class="product__info">
+							Образовательный проект Анны Сотниковой, эксперта в ресторанном бизнесе. Лекции в SOTA school чдающие первоклассный сервис. Запуск школы в 2021 г.
+						</p>
+					</article>
+					<article class="product swiper-slide">
+						<span class="product__title">SotA School</span>
+						<p class="product__info">
+							Образовательный проект Анны Сотниковой, эксперта в ресторанном бизнесе. Лекции в SOTA school читают практикующие шеф-повара, управляющие ресторанов, маркетологи, финансисты и другие мастера, создающие первоклассный сервис. Запуск школы в 2021 г.
+						</p>
+					</article>
+				</div>
+			</div>
+		</div>
+		<div class="pagination">
+			<button class="pagination__button pagination__button--prev" 
+			onclick="products_images_slide_prev()"></button>
+			<div class="pagination__info"></div>
+			<button class="pagination__button pagination__button--next"
+			onclick="products_images_slide_next()"></button>				
+		</div>
+	</section>
+
+	<script>
+		let products_images = new Swiper(".products__images", {
+			slidesPerView: 1,
+			autoHeight: true,
+			pagination: {
+				el: '.products .pagination__info',
+				type: 'custom',
+				renderCustom: function (swiper, current, total) {
+					return '<span>' + 1 + '</span>' 
+						+ '<div></div>' 
+						+ '<span>' + total + '</span>';
+				}
+			}
+		});
+
+		let products_info = new Swiper(".products__info", {
+			slidesPerView: 1,
+			effect: 'fade',
+			fade: { crossFade: true }
+		});
+
+		function products_images_slide_next()
+		{
+			products_images.slideNext();
+			products_info.slideNext();
+		}
+
+		function products_images_slide_prev()
+		{
+			products_images.slidePrev();
+			products_info.slidePrev();
+		}
+	</script>
+
 	<section class="contacts container container_md">
 		<div class="contacts__container">
 			<div class="contacts__info">
@@ -361,7 +479,7 @@
 	</section>
 
 	<footer>
-		<div class="container container_md">			
+		<div class="container">			
 			<div class="footer__content">
 				<div class="footer__left">
 					<ul>
