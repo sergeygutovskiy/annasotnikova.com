@@ -80,18 +80,31 @@
 .link {
 	display: inline-block;
 	font-size: 18px;
+	
 	color: var(--color-red);
+	transition: all 150ms linear;
 }
 
 .link::after {
-	margin-left: 24px;
+	position: relative;
+	left: 24px;
+	/*padding-left: 24px;*/
 	content: '';
 
 	display: inline-block;
 	width: 45px;
 	height: 12px;
+	background-image: url("/imgs/link-arrow.svg");
 
-	background-image: url("/imgs/link-arrow.svg")
+	transition: all 150ms linear;
+}
+
+.link:hover {
+	color: #ab0811;
+}
+
+.link:hover::after {
+	transform: translateX(16px);
 }
 
 .pagination {

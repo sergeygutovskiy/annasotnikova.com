@@ -22,6 +22,14 @@
 <body>
 	<!-- <div class="body-blur"></div> -->
 
+	<script>
+		function custom_pagination_render (swiper, current, total) {
+			return '<span>' + current + '</span>' 
+				+ '<div></div>' 
+				+ '<span>' + total + '</span>';
+		}
+	</script>
+
 	<!-- navigation menu -->
 	<section class="nav-menu">
 		<ul class="nav-menu__list">
@@ -110,6 +118,7 @@
 	<!-- header banner -->
 	<header class="container">
 		<div class="header__content">
+			<div class="header__background-gradient"></div>
 			<img class="header__logo" src="/imgs/logo.png">
 			<div class="header__text">
 				<span>Я ЗНАЮ</span>
@@ -275,6 +284,37 @@
 						</div>
 					</div>
 				</article>
+				<article class="swiper-slide">
+					<div class="book">
+						<div class="book__image-container">
+							<img src="/imgs/announcements-example.jpg">
+						</div>		
+						<div class="book__content">
+							<div class="container__title">
+								<h2>Учебник официанта</h2>
+							</div>
+							<span class="book__author">Анна Сотникова</span>
+							<span class="book__price">420 ₽</span>
+							<p class="paragraph">
+								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+							</p>
+						</div>			
+						<div class="book__menu">
+							<a class="book__menu-item" href="">
+								<img src="/imgs/cart.svg">
+								<span>Предзаказ</span>
+							</a>
+							<a class="book__menu-item" href="">
+								<img src="/imgs/plus.svg">
+								<span>Узнать больше</span>
+							</a>
+							<a class="book__menu-item" href="">
+								<img src="/imgs/book-icon.svg">
+								<span>Читать</span>
+							</a>
+						</div>
+					</div>
+				</article>
 			</div>
 		</div>
 		<div class="pagination pagination_center">
@@ -295,11 +335,7 @@
 			pagination: {
 				el: '.books .pagination__info',
 				type: 'custom',
-				renderCustom: function (swiper, current, total) {
-					return '<span>' + 1 + '</span>' 
-						+ '<div></div>' 
-						+ '<span>' + total + '</span>';
-				}
+				renderCustom: custom_pagination_render
 			}
 		});
 	</script>
@@ -506,11 +542,7 @@
 			pagination: {
 				el: '.products .pagination__info',
 				type: 'custom',
-				renderCustom: function (swiper, current, total) {
-					return '<span>' + 1 + '</span>' 
-						+ '<div></div>' 
-						+ '<span>' + total + '</span>';
-				}
+				renderCustom: custom_pagination_render
 			}
 		});
 	</script>
@@ -592,11 +624,7 @@
 			pagination: {
 				el: '.reviews .pagination__info',
 				type: 'custom',
-				renderCustom: function (swiper, current, total) {
-					return '<span>' + 1 + '</span>' 
-						+ '<div></div>' 
-						+ '<span>' + total + '</span>';
-				}
+				renderCustom: custom_pagination_render 
 			},
 			breakpoints: {
 				1025: {

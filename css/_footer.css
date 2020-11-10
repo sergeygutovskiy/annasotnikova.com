@@ -21,13 +21,22 @@ footer {
 	letter-spacing: 0.03em;
 }
 
-.footer__left ul li:not(:last-child) {
-	margin-bottom: 24px;
-}
-
 .footer__left ul:last-child {
 	margin-left: 56px;
 }
+
+.footer__left li:not(:last-child) {
+	margin-bottom: 24px;
+}
+
+.footer__left li a {
+	transition: all 150ms linear;
+}
+
+.footer__left li a:hover {
+	color: var(--color-red);
+}
+
 
 .footer__center {
 	width: 300px;
