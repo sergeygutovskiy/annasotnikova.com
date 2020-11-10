@@ -17,9 +17,19 @@ nav {
 	font-size: 18px;
 	line-height: 22px;
 	color: #818181;
+
+	transition: color: 150ms linear;
 }
 
 .nav__language .active {
+	color: var(--color-black);
+}
+
+.nav__language a:hover {
+	color: var(--color-black);
+}
+
+.nav__language a:hover {
 	color: var(--color-black);
 }
 
@@ -162,7 +172,6 @@ nav {
 	transform: translateY(-50%);
 
 	font-size: 20px;
-	/*line-height: 26px;*/
 	text-transform: uppercase;
 	color: white;
 }
@@ -174,6 +183,15 @@ nav {
 .nav-menu__list-item--active > a {
 	color: var(--color-black);
 	border-bottom: solid 1px var(--color-black);
+}
+
+.nav-menu__list-item:not(.nav-menu__list-item--active) > a {
+	border-bottom: solid 1px #C21818;
+	transition: all 150ms linear;
+}
+
+.nav-menu__list-item:not(.nav-menu__list-item--active) > a:hover {
+	border-bottom: solid 1px white;
 }
 
 .nav-menu__list-item:not(:last-child) {

@@ -72,7 +72,7 @@
 			<div class="nav__right">
 				<div class="nav__search">
 					<input type="text" class="nav__search-input" placeholder="Поиск">
-					<a href="#"><i class="fal fa-search"></i></a>
+					<a href="#"><img src="/imgs/pupa.png"></a>
 				</div>
 				<div class="nav__account">
 					<a href="#"><img src="/imgs/account.jpg"></a>
@@ -100,9 +100,9 @@
 				$("nav").toggleClass("nav_mobile--active");
 
 				if ($("nav").hasClass("nav_mobile--active"))
-					$('html, body').css({ overflow: 'hidden', height: '100%' });
+					$('html, body').css({ "overflow-y": 'hidden', height: '100%' });
 				else
-					$('html, body').css({ overflow: 'auto', height: 'auto' });
+					$('html, body').css({ "overflow-y": 'auto', height: 'auto' });
 			// }
 		});
 	</script>
@@ -151,7 +151,7 @@
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
 				<article class="swiper-slide">
-					<div class="image-container image-container_2_1">
+					<div class="image-container image-container_2_1 zoomable-image-container ">
 						<img class="cover-image" src="/imgs/announcements-example.jpg">
 					</div>
 					<span class="announcements__category">Онлайн-семинар</span>
@@ -162,7 +162,7 @@
 					<span class="announcements__date">16 июля, 15:00</span>
 				</article>
 				<article class="swiper-slide">
-					<div class="image-container image-container_2_1">
+					<div class="image-container image-container_2_1 zoomable-image-container ">
 						<img class="cover-image" src="/imgs/announcements-example.jpg">
 					</div>
 					<span class="announcements__category">Онлайн-семинар</span>
@@ -173,7 +173,7 @@
 					<span class="announcements__date">16 июля, 15:00</span>
 				</article>
 				<article class="swiper-slide">
-					<div class="image-container image-container_2_1">
+					<div class="image-container image-container_2_1 zoomable-image-container ">
 						<img class="cover-image" src="/imgs/announcements-example.jpg">
 					</div>
 					<span class="announcements__category">Онлайн-семинар</span>
@@ -184,7 +184,7 @@
 					<span class="announcements__date">16 июля, 15:00</span>
 				</article>
 				<article class="swiper-slide">
-					<div class="image-container image-container_2_1">
+					<div class="image-container image-container_2_1 zoomable-image-container ">
 						<img class="cover-image" src="/imgs/announcements-example.jpg">
 					</div>
 					<span class="announcements__category">Онлайн-семинар</span>
@@ -195,7 +195,7 @@
 					<span class="announcements__date">16 июля, 15:00</span>
 				</article>
 				<article class="swiper-slide">
-					<div class="image-container image-container_2_1">
+					<div class="image-container image-container_2_1 zoomable-image-container ">
 						<img class="cover-image" src="/imgs/announcements-example.jpg">
 					</div>
 					<span class="announcements__category">Онлайн-семинар</span>
@@ -204,7 +204,18 @@
 						Ресторанный бизнес 2020: новая реальность
 					</span>
 					<span class="announcements__date">16 июля, 15:00</span>
-				</article>																
+				</article>
+				<article class="swiper-slide">
+					<div class="image-container image-container_2_1 zoomable-image-container ">
+						<img class="cover-image" src="/imgs/announcements-example.jpg">
+					</div>
+					<span class="announcements__category">Онлайн-семинар</span>
+					<span class="announcements__title">
+						Ресторанный бизнес 2020: новая реальность
+						Ресторанный бизнес 2020: новая реальность
+					</span>
+					<span class="announcements__date">16 июля, 15:00</span>
+				</article>
 			</div>
 		</div>
 		<div class="announcements__buttons container container_md">
@@ -249,49 +260,18 @@
 							</p>
 						</div>			
 						<div class="book__menu">
-							<div class="book__menu-item">
+							<a class="book__menu-item" href="">
 								<img src="/imgs/cart.svg">
 								<span>Предзаказ</span>
-							</div>
-							<div class="book__menu-item">
+							</a>
+							<a class="book__menu-item" href="">
 								<img src="/imgs/plus.svg">
 								<span>Узнать больше</span>
-							</div>
-							<div class="book__menu-item">
+							</a>
+							<a class="book__menu-item" href="">
 								<img src="/imgs/book-icon.svg">
 								<span>Читать</span>
-							</div>
-						</div>
-					</div>
-				</article>
-				<article class="swiper-slide">
-					<div class="book">
-						<div class="book__image-container">
-							<img src="/imgs/announcements-example.jpg">
-						</div>		
-						<div class="book__content">
-							<div class="container__title">
-								<h2>Учебник официанта</h2>
-							</div>
-							<span class="book__author">Анна Сотникова</span>
-							<span class="book__price">420 ₽</span>
-							<p class="paragraph">
-								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-							</p>
-						</div>			
-						<div class="book__menu">
-							<div class="book__menu-item">
-								<img src="/imgs/cart.svg">
-								<span>Предзаказ</span>
-							</div>
-							<div class="book__menu-item">
-								<img src="/imgs/plus.svg">
-								<span>Узнать больше</span>
-							</div>
-							<div class="book__menu-item">
-								<img src="/imgs/book-icon.svg">
-								<span>Читать</span>
-							</div>
+							</a>
 						</div>
 					</div>
 				</article>

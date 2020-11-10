@@ -84,16 +84,26 @@ footer {
 	font-size: 14px;
 	letter-spacing: 0.04em;
 	
-	border: none;
+	border: solid 1px white;
 	border-radius: 5px;
+
 	box-shadow: 0px 10px 30px rgba(8, 24, 81, 0.1);
+	transition: all 150ms linear;
+}
+
+.footer-mailing__input:focus {
+	box-shadow: none;
+	border: solid 1px var(--input-color-hover);
 }
 
 .footer-mailing__button { 
 	position: relative;
 	width: 100px;
 	border-radius: 5px;
+	border: solid 1px var(--color-red);
 	background-color: var(--color-red);		
+
+	transition: all 150ms linear;
 }
 
 .footer-mailing__button::after {
@@ -109,6 +119,16 @@ footer {
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
+
+	/*transition: all 150ms linear;*/
+}
+
+.footer-mailing__button:hover {
+	background-color: white;
+} 
+
+.footer-mailing__button:hover::after {
+	filter: invert(46%) sepia(93%) saturate(7373%) hue-rotate(346deg) brightness(82%) contrast(120%);
 }
 
 .footer-mailing__text {
