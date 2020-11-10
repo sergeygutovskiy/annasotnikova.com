@@ -14,39 +14,15 @@
 	<link rel="stylesheet" href="fonts/font-awesome/css/all.css">
 	<!-- montserrat -->
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<!-- cormorant -->
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="css/pages/index.css">
 </head>
 <body>
 	<!-- <div class="body-blur"></div> -->
 
-	<nav>
-		<section class="container nav__container">
-			<div class="nav__language">
-				<a href="/" class="active">RU</a>
-				<a href="/">EN</a>
-			</div>
-			<div class="nav__location">
-				<i class="fal fa-map-marker-alt"></i>
-				Санкт-Петербург
-			</div>
-			<div class="nav__right">
-				<div class="nav__search">
-					<input type="text" class="nav__search-input" placeholder="Поиск">
-					<a href="#"><i class="fal fa-search"></i></a>
-				</div>
-				<div class="nav__account">
-					<a href="#"><img src="/imgs/account.jpg"></a>
-				</div>
-				<button class="nav__menu-button">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
-			</div>
-		</section>
-	</nav>
-
+	<!-- navigation menu -->
 	<section class="nav-menu">
 		<ul class="nav-menu__list">
 			<li class="nav-menu__list-item nav-menu__list-item--active"><a href="">Главная</a></li>
@@ -82,6 +58,34 @@
 		</ul>
 	</section>
 
+	<!-- navigation -->
+	<nav>
+		<section class="container nav__container">
+			<div class="nav__language">
+				<a href="/" class="active">RU</a>
+				<a href="/">EN</a>
+			</div>
+			<div class="nav__location">
+				<i class="fal fa-map-marker-alt"></i>
+				Санкт-Петербург
+			</div>
+			<div class="nav__right">
+				<div class="nav__search">
+					<input type="text" class="nav__search-input" placeholder="Поиск">
+					<a href="#"><i class="fal fa-search"></i></a>
+				</div>
+				<div class="nav__account">
+					<a href="#"><img src="/imgs/account.jpg"></a>
+				</div>
+				<button class="nav__menu-button">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</section>
+	</nav>
+
 	<script>
 		$(".nav__search a").click(function () {
 			$(".nav__search-input").toggleClass("nav__search-input--active");
@@ -89,43 +93,66 @@
 
 		$(".nav__menu-button").click(function () {
 			$(".nav-menu").toggleClass("nav-menu--active");
+			$(".nav__menu-button").toggleClass("nav__menu-button--active");
 
-			if (window.innerWidth <= 768)
-			{
+			// if (window.innerWidth <= 768)
+			// {
 				$("nav").toggleClass("nav_mobile--active");
 
 				if ($("nav").hasClass("nav_mobile--active"))
 					$('html, body').css({ overflow: 'hidden', height: '100%' });
 				else
 					$('html, body').css({ overflow: 'auto', height: 'auto' });
-			}
+			// }
 		});
 	</script>
 
-	<section class="about container">
-		<div class="about__image-container">
-			<img src="/imgs/sotnikova/standing.jpg">
+	<!-- header banner -->
+	<header class="container">
+		<div class="header__content">
+			<img class="header__logo" src="/imgs/logo.png">
+			<div class="header__text">
+				<span>Я ЗНАЮ</span>
+				<span>как зарабатывать <br> на ресторанах</span>
+				<div></div><a class="link header__link" href="/">Узнать больше</a>
+			</div>
 		</div>
-		<div class="about__content">
-			<h2>обо мне</h2>
-			<span class="about__name">Сотникова Анна</span>
-			<p>
-				Бизнес-мама, успешно сочетающая воспитание двоих детей и управление бизнесом. 
-			</p>
-			<p>
-				Эффективный практик с 20-летним стажем в ресторанной сфере, основатель школы ресторанного менеджмента SotA School, создатель и идейный вдохновитель кулинарной онлайн и офлайн школы для детей «Дети на кухне». Прошла путь от официанта до генерального директора восточного направления ресторанов крупнейшей группы компаний Ginza Project. На протяжении 15 лет являлась младшим партнёром ресторанов под международным знаком качества Ginza Project, где управляла 20 крупными ресторанами в Санкт-Петербурге и занималась обучением персонала. Открыла 28 ресторанов с разной концепцией. 
-			</p>
-			<a class="link" href="/">Узнать больше</a>
+	</header>
+
+	<!-- about -->
+	<section class="about">
+		<div class="about__container container">
+			<div class="about__image-container">
+				<img src="/imgs/sotnikova/standing.jpg">
+			</div>
+			<div class="about__content">
+				<div class="container__title">
+					<h2>обо мне</h2>
+				</div>
+				<span class="about__name">Сотникова Анна</span>
+				<p>
+					Бизнес-мама, успешно сочетающая воспитание двоих детей и управление бизнесом. 
+				</p>
+				<p class="paragraph">
+					Эффективный практик с 20-летним стажем в ресторанной сфере, основатель школы ресторанного менеджмента SotA School, создатель и идейный вдохновитель кулинарной онлайн и офлайн школы для детей «Дети на кухне». Прошла путь от официанта до генерального директора восточного направления ресторанов крупнейшей группы компаний Ginza Project. На протяжении 15 лет являлась младшим партнёром ресторанов под международным знаком качества Ginza Project, где управляла 20 крупными ресторанами в Санкт-Петербурге и занималась обучением персонала. Открыла 28 ресторанов с разной концепцией. 
+				</p>
+				<a class="link" href="/">Узнать больше</a>
+			</div>
 		</div>
 	</section>
 
+	<!-- announcements -->
 	<section class="announcements">
-		<div class="container container_md"><h2>Анонсы</h2></div>
+		<div class="container container_md">
+			<div class="container__title">
+				<h2>Анонсы</h2>
+			</div>
+		</div>
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
 				<article class="swiper-slide">
-					<div class="announcements__image-container">
-						<img src="/imgs/announcements-example.jpg">
+					<div class="image-container image-container_2_1">
+						<img class="cover-image" src="/imgs/announcements-example.jpg">
 					</div>
 					<span class="announcements__category">Онлайн-семинар</span>
 					<span class="announcements__title">
@@ -135,37 +162,49 @@
 					<span class="announcements__date">16 июля, 15:00</span>
 				</article>
 				<article class="swiper-slide">
-					<div class="announcements__image-container">
-						<img src="/imgs/announcements-example.jpg">
+					<div class="image-container image-container_2_1">
+						<img class="cover-image" src="/imgs/announcements-example.jpg">
 					</div>
 					<span class="announcements__category">Онлайн-семинар</span>
-					<span class="announcements__title">Ресторанный бизнес 2020: новая реальность</span>
+					<span class="announcements__title">
+						Ресторанный бизнес 2020: новая реальность
+						Ресторанный бизнес 2020: новая реальность
+					</span>
 					<span class="announcements__date">16 июля, 15:00</span>
 				</article>
 				<article class="swiper-slide">
-					<div class="announcements__image-container">
-						<img src="/imgs/announcements-example.jpg">
+					<div class="image-container image-container_2_1">
+						<img class="cover-image" src="/imgs/announcements-example.jpg">
 					</div>
 					<span class="announcements__category">Онлайн-семинар</span>
-					<span class="announcements__title">Ресторанный бизнес 2020: новая реальность</span>
+					<span class="announcements__title">
+						Ресторанный бизнес 2020: новая реальность
+						Ресторанный бизнес 2020: новая реальность
+					</span>
 					<span class="announcements__date">16 июля, 15:00</span>
 				</article>
 				<article class="swiper-slide">
-					<div class="announcements__image-container">
-						<img src="/imgs/announcements-example.jpg">
+					<div class="image-container image-container_2_1">
+						<img class="cover-image" src="/imgs/announcements-example.jpg">
 					</div>
 					<span class="announcements__category">Онлайн-семинар</span>
-					<span class="announcements__title">Ресторанный бизнес 2020: новая реальность</span>
+					<span class="announcements__title">
+						Ресторанный бизнес 2020: новая реальность
+						Ресторанный бизнес 2020: новая реальность
+					</span>
 					<span class="announcements__date">16 июля, 15:00</span>
 				</article>
 				<article class="swiper-slide">
-					<div class="announcements__image-container">
-						<img src="/imgs/announcements-example.jpg">
+					<div class="image-container image-container_2_1">
+						<img class="cover-image" src="/imgs/announcements-example.jpg">
 					</div>
 					<span class="announcements__category">Онлайн-семинар</span>
-					<span class="announcements__title">Ресторанный бизнес 2020: новая реальность</span>
+					<span class="announcements__title">
+						Ресторанный бизнес 2020: новая реальность
+						Ресторанный бизнес 2020: новая реальность
+					</span>
 					<span class="announcements__date">16 июля, 15:00</span>
-				</article>
+				</article>																
 			</div>
 		</div>
 		<div class="announcements__buttons container container_md">
@@ -190,6 +229,7 @@
 		});
 	</script>
 
+	<!-- books -->
 	<section class="books">
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
@@ -199,10 +239,12 @@
 							<img src="/imgs/announcements-example.jpg">
 						</div>		
 						<div class="book__content">
-							<h2>Учебник официанта</h2>
+							<div class="container__title">
+								<h2>Учебник официанта</h2>
+							</div>
 							<span class="book__author">Анна Сотникова</span>
 							<span class="book__price">420 ₽</span>
-							<p>
+							<p class="paragraph">
 								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 							</p>
 						</div>			
@@ -228,10 +270,12 @@
 							<img src="/imgs/announcements-example.jpg">
 						</div>		
 						<div class="book__content">
-							<h2>Учебник официанта</h2>
+							<div class="container__title">
+								<h2>Учебник официанта</h2>
+							</div>
 							<span class="book__author">Анна Сотникова</span>
 							<span class="book__price">420 ₽</span>
-							<p>
+							<p class="paragraph">
 								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 							</p>
 						</div>			
@@ -252,85 +296,104 @@
 					</div>
 				</article>
 			</div>
-		</div>		
+		</div>
+		<div class="pagination pagination_center">
+			<button class="pagination__button pagination__button--prev"></button>
+			<div class="pagination__info"></div>
+			<button class="pagination__button pagination__button--next"></button>
+		</div>
 	</section>
 
 	<script>
 		let books = new Swiper(".books .swiper-container", {
 			slidesPerView: 1,
-			centeredSlides: true
+			centeredSlides: true,
+			navigation: {
+				nextEl: '.books .pagination__button--next',
+				prevEl: '.books .pagination__button--prev'
+			},
+			pagination: {
+				el: '.books .pagination__info',
+				type: 'custom',
+				renderCustom: function (swiper, current, total) {
+					return '<span>' + 1 + '</span>' 
+						+ '<div></div>' 
+						+ '<span>' + total + '</span>';
+				}
+			}
 		});
 	</script>
 
+	<!-- projects -->
 	<section class="projects">
-		<div class="container container_md"><h2>Проекты</h2></div>
+		<div class="container container_md">
+			<div class="container__title">
+				<h2>Проекты</h2>
+				<div><a href="/">смотреть всё</a></div>
+			</div>
+		</div>
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
 				<article class="swiper-slide project">
-					<img src="/imgs/announcements-example.jpg">
-					<div class="project__panel">
-						<span class="project__title">Sota school</span>
-						<p class="project__desc">
-							Ut enim ad minim veniam quis
-						</p>
+					<div class="image-container image-container_2_1">
+						<img class="cover-image" src="/imgs/announcements-example.jpg">
+						<div class="project__panel">
+							<span class="project__title">Sota school</span>
+							<p class="project__desc">
+								Ut enim ad minim veniam quis
+							</p>
+						</div>
 					</div>
 				</article>
 				<article class="swiper-slide project">
-					<img src="/imgs/announcements-example.jpg">
-					<div class="project__panel">
-						<span class="project__title">Sota school</span>
-						<p class="project__desc">
-							Ut enim ad minim veniam quis
-							Ut enim ad minim veniam quis
-						</p>
+					<div class="image-container image-container_2_1">
+						<img class="cover-image" src="/imgs/announcements-example.jpg">
+						<div class="project__panel">
+							<span class="project__title">Sota school</span>
+							<p class="project__desc">
+								Ut enim ad minim veniam quis
+							</p>
+						</div>
 					</div>
 				</article>
 				<article class="swiper-slide project">
-					<img src="/imgs/announcements-example.jpg">
-					<div class="project__panel">
-						<span class="project__title">Sota school</span>
-						<p class="project__desc">
-							Ut enim ad minim veniam quis
-						</p>
+					<div class="image-container image-container_2_1">
+						<img class="cover-image" src="/imgs/announcements-example.jpg">
+						<div class="project__panel">
+							<span class="project__title">Sota school</span>
+							<p class="project__desc">
+								Ut enim ad minim veniam quis
+							</p>
+						</div>
 					</div>
 				</article>
 				<article class="swiper-slide project">
-					<img src="/imgs/announcements-example.jpg">
-					<div class="project__panel">
-						<span class="project__title">Sota school</span>
-						<p class="project__desc">
-							Ut enim ad minim veniam quis
-						</p>
+					<div class="image-container image-container_2_1">
+						<img class="cover-image" src="/imgs/announcements-example.jpg">
+						<div class="project__panel">
+							<span class="project__title">Sota school</span>
+							<p class="project__desc">
+								Ut enim ad minim veniam quis
+							</p>
+						</div>
 					</div>
 				</article>
 				<article class="swiper-slide project">
-					<img src="/imgs/announcements-example.jpg">
-					<div class="project__panel">
-						<span class="project__title">Sota school</span>
-						<p class="project__desc">
-							Ut enim ad minim veniam quis
-						</p>
-					</div>
-				</article>
-				<article class="swiper-slide project">
-					<img src="/imgs/announcements-example.jpg">
-					<div class="project__panel">
-						<span class="project__title">Sota school</span>
-						<p class="project__desc">
-							Ut enim ad minim veniam quis
-						</p>
-					</div>
-				</article>
-				<article class="swiper-slide project">
-					<img src="/imgs/announcements-example.jpg">
-					<div class="project__panel">
-						<span class="project__title">Sota school</span>
-						<p class="project__desc">
-							Ut enim ad minim veniam quis
-						</p>
+					<div class="image-container image-container_2_1">
+						<img class="cover-image" src="/imgs/announcements-example.jpg">
+						<div class="project__panel">
+							<span class="project__title">Sota school</span>
+							<p class="project__desc">
+								Ut enim ad minim veniam quis
+							</p>
+						</div>
 					</div>
 				</article>
 			</div>
+		</div>
+		<div class="projects__buttons container container_md">
+			<div class="projects__button projects__button--prev"></div>
+			<div class="projects__button projects__button--next"></div>
 		</div>
 	</section>
 
@@ -338,98 +401,128 @@
 		let projects = new Swiper(".projects .swiper-container", {
 			slidesPerView: 'auto',
 			spaceBetween: 32,
-			initialSlide: 1
+			initialSlide: 1,
+			navigation: {
+				nextEl: '.projects__button--next',
+				prevEl: '.projects__button--prev'
+			},
 		});
 	</script>
 
-	<section class="blog container container_md">
-		<h2>Блог</h2>
-		<div class="blog__content">
-			<article class="blog-item">
-				<div class="blog-item__image-container">
-					<img src="/imgs/announcements-example.jpg">
-				</div>
-				<span class="blog-item__title">Lorem ipsum dolor sit amet</span>
-				<p class="blog-item__info">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-				</p>
-			</article>
-			<article class="blog-item">
-				<div class="blog-item__image-container">
-					<img src="/imgs/announcements-example.jpg">
-				</div>
-				<span class="blog-item__title">Lorem ipsum dolor sit amet</span>
-				<p class="blog-item__info">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-				</p>
-			</article>
-			<article class="blog-item">
-				<div class="blog-item__image-container">
-					<img src="/imgs/announcements-example.jpg">
-				</div>
-				<span class="blog-item__title">Lorem ipsum dolor sit amet</span>
-				<p class="blog-item__info">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-				</p>
-			</article>
-			<article class="blog-item">
-				<div class="blog-item__image-container">
-					<img src="/imgs/announcements-example.jpg">
-				</div>
-				<span class="blog-item__title">Lorem ipsum dolor sit amet</span>
-				<p class="blog-item__info">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-				</p>
-			</article>
+	<!-- blog -->
+	<section class="blog">
+		<div class="container container_md">
+			<div class="container__title">
+				<h2>Блог</h2>
+				<div><a href="/">смотреть всё</a></div>
+			</div>
+			<div class="blog__content">
+				<article class="blog-item">
+					<div class="image-container image-container_8_5">
+						<img class="cover-image" src="/imgs/announcements-example.jpg">
+					</div>
+					<span class="blog-item__title">Lorem ipsum dolor sit amet</span>
+					<p class="blog-item__info paragraph">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+					</p>
+					<a class="blog-item__link" href="/">подробнее</a>
+				</article>
+				<article class="blog-item">
+					<div class="image-container image-container_8_5">
+						<img class="cover-image" src="/imgs/announcements-example.jpg">
+					</div>
+					<span class="blog-item__title">Lorem ipsum dolor sit amet</span>
+					<p class="blog-item__info paragraph">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+					</p>
+					<a class="blog-item__link" href="/">подробнее</a>
+				</article>
+				<article class="blog-item">
+					<div class="image-container image-container_8_5">
+						<img class="cover-image" src="/imgs/announcements-example.jpg">
+					</div>
+					<span class="blog-item__title">Lorem ipsum dolor sit amet</span>
+					<p class="blog-item__info paragraph">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+					</p>
+					<a class="blog-item__link" href="/">подробнее</a>
+				</article>
+				<article class="blog-item">
+					<div class="image-container image-container_8_5">
+						<img class="cover-image" src="/imgs/announcements-example.jpg">
+					</div>
+					<span class="blog-item__title">Lorem ipsum dolor sit amet</span>
+					<p class="blog-item__info paragraph">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+					</p>
+					<a class="blog-item__link" href="/">подробнее</a>
+				</article>
+			</div>
 		</div>
 	</section>
 
-	<section class="products container container_md">
-		<h2>Продукты</h2>
-		<div class="products__content">
-			<div class="products__images swiper-container">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide"><img src="/imgs/announcements-example.jpg"></div>
-					<div class="swiper-slide"><img src="/imgs/sotnikova/standing.jpg"></div>
-					<div class="swiper-slide"><img src="/imgs/announcements-example.jpg"></div>
-				</div>
-			</div>
-			<div class="products__info swiper-container">
-				<div class="swiper-wrapper">								
-					<article class="product swiper-slide">
-						<span class="product__title">SotA School</span>
-						<p class="product__info">
-							Образовательный проект Анны Сотниковой, эксперта в ресторанном бизнесе. Лекции в SOTA school читают практикующие шеф-повара, управляющие ресторанов, маркетологи, финансисты и другие мастера, создающие первоклассный сервис. Запуск школы в 2021 г.
-						</p>
-					</article>
-					<article class="product swiper-slide">
-						<span class="product__title">SotA School</span>
-						<p class="product__info">
-							Образовательный проект Анны Сотниковой, эксперта в ресторанном бизнесе. Лекции в SOTA school чдающие первоклассный сервис. Запуск школы в 2021 г.
-						</p>
-					</article>
-					<article class="product swiper-slide">
-						<span class="product__title">SotA School</span>
-						<p class="product__info">
-							Образовательный проект Анны Сотниковой, эксперта в ресторанном бизнесе. Лекции в SOTA school читают практикующие шеф-повара, управляющие ресторанов, маркетологи, финансисты и другие мастера, создающие первоклассный сервис. Запуск школы в 2021 г.
-						</p>
-					</article>
-				</div>
+	<!-- products -->
+	<section class="products">
+		<div class="container container_md">
+			<div class="container__title">
+				<h2>Продукты</h2>
+				<div><a href="/">смотреть всё</a></div>
 			</div>
 		</div>
-		<div class="pagination">
-			<button class="pagination__button pagination__button--prev" 
-			onclick="products_images_slide_prev()"></button>
-			<div class="pagination__info"></div>
-			<button class="pagination__button pagination__button--next"
-			onclick="products_images_slide_next()"></button>				
+		<div class="products__content">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">								
+					<article class="swiper-slide">
+						<div class="product">
+							<div class="product__image-container">
+								<div class="image-container image-container_8_5">
+									<img class="cover-image" src="/imgs/announcements-example.jpg">
+								</div>
+							</div>
+							<div class="product__info">
+								<span class="product__title">SotA School</span>
+								<p class="product__text paragraph">
+									Образовательный проект Анны Сотниковой, эксперта в ресторанном бизнесе. Лекции в SOTA school читают практикующие шеф-повара, управляющие ресторанов, маркетологи, финансисты и другие мастера, создающие первоклассный сервис. Запуск школы в 2021 г.
+								</p>							
+							</div>							
+						</div>
+					</article>
+					<article class="swiper-slide">
+						<div class="product">
+							<div class="product__image-container">
+								<div class="image-container image-container_8_5">
+									<img class="cover-image" src="/imgs/announcements-example.jpg">
+								</div>
+							</div>
+							<div class="product__info">
+								<span class="product__title">SotA School</span>
+								<p class="product__text paragraph">
+									Образовательный проект Анны Сотниковой, эксперта в ресторанном бизнесе. Лекции в SOTA school читают практикующие шеф-повара, управляющие ресторанов, маркетологи, финансисты и другие мастера, создающие первоклассный сервис. Запуск школы в 2021 г.
+								</p>							
+							</div>							
+						</div>
+					</article>
+				</div>				
+			</div>
+		</div>
+		<div class="products__pagination-container">
+			<div class="pagination">
+				<button class="pagination__button pagination__button--prev"></button>
+				<div class="pagination__info"></div>
+				<button class="pagination__button pagination__button--next"></button>
+			</div>
 		</div>
 	</section>
 
 	<script>
-		let products_images = new Swiper(".products__images", {
+		let products = new Swiper(".products .swiper-container", {
 			slidesPerView: 1,
+			// centeredSlides: true,
 			autoHeight: true,
+			navigation: {
+				nextEl: '.products .pagination__button--next',
+				prevEl: '.products .pagination__button--prev'
+			},
 			pagination: {
 				el: '.products .pagination__info',
 				type: 'custom',
@@ -440,31 +533,123 @@
 				}
 			}
 		});
+	</script>
 
-		let products_info = new Swiper(".products__info", {
+	<!-- reviews -->
+	<section class="reviews">
+		<div class="container container_md">
+			<div class="container__title">
+				<h2>Отзывы</h2>
+			</div>
+		</div>	
+		<div class="reviews__content">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide reviews__wrapper">
+						<article class="review">
+							<p class="paragraph">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</article>
+					</div>
+					<div class="swiper-slide reviews__wrapper">
+						<article class="review">
+							<p class="paragraph">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</article>
+					</div>
+					<div class="swiper-slide reviews__wrapper">
+						<article class="review">
+							<p class="paragraph">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</article>
+					</div>
+					<div class="swiper-slide reviews__wrapper">
+						<article class="review">
+							<p class="paragraph">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="pagination pagination_center">
+			<button class="pagination__button pagination__button--prev"
+			onclick="move_reviews_prev()"></button>
+			<div class="pagination__info"></div>
+			<button class="pagination__button pagination__button--next"
+			onclick="move_reviews_next()"></button>
+		</div>
+	</section>
+
+	<script>
+		let reviews = new Swiper(".reviews .swiper-container", {
 			slidesPerView: 1,
-			effect: 'fade',
-			fade: { crossFade: true }
+			autoHeight: true,
+			pagination: {
+				el: '.reviews .pagination__info',
+				type: 'custom',
+				renderCustom: function (swiper, current, total) {
+					return '<span>' + 1 + '</span>' 
+						+ '<div></div>' 
+						+ '<span>' + total + '</span>';
+				}
+			},
+			breakpoints: {
+				1025: {
+					slidesPerView: 2,
+				}
+			}
 		});
 
-		function products_images_slide_next()
+		function move_reviews_next()
 		{
-			products_images.slideNext();
-			products_info.slideNext();
+			if (window.innerWidth > 1024)
+				reviews.slideTo(reviews.activeIndex + 2);
+			else
+				reviews.slideTo(reviews.activeIndex + 1);
 		}
 
-		function products_images_slide_prev()
+		function move_reviews_prev()
 		{
-			products_images.slidePrev();
-			products_info.slidePrev();
+			if (window.innerWidth > 1024)
+				reviews.slideTo(reviews.activeIndex - 2);
+			else
+				reviews.slideTo(reviews.activeIndex - 1);
 		}
 	</script>
 
+	<!-- contacts -->
 	<section class="contacts container container_md">
 		<div class="contacts__container">
 			<div class="contacts__info">
-				<h2>индивидуальные <br> и корпоративные консультации</h2>
-				<p>
+				<div class="container__title">
+					<h2>индивидуальные <br> и корпоративные консультации</h2>
+				</div>
+				<p class="paragraph">
 					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 				</p>
 			</div>
@@ -478,6 +663,7 @@
 		</div>
 	</section>
 
+	<!-- footer -->
 	<footer>
 		<div class="container">			
 			<div class="footer__content">
