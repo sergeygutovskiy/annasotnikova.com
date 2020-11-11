@@ -1,6 +1,8 @@
 nav {
 	position: relative;
 	background-color: white;
+
+	box-shadow: 0px 10px 50px rgba(8, 24, 81, 0.05);
 }
 
 .nav__container {

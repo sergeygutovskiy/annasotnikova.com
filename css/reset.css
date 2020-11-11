@@ -1,6 +1,7 @@
 * {
 	box-sizing: border-box;
 	outline: none;
+	-webkit-tap-highlight-color: transparent; /* for removing the highlight */
 }
 
 @font-face {
@@ -43,6 +44,7 @@ body {
 	font-weight: 300;
 	font-size: 14px;
 	color: var(--color-black);
+	-webkit-tap-highlight-color: transparent; /* for removing the highlight */
 }
 
 body > section {

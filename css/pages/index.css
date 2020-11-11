@@ -23,12 +23,14 @@ header {
 
 .header__background-gradient {
 	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	right: 0;
-
-	background: linear-gradient(90deg, rgba(255, 255, 255, 0) 42.19%, #FFFFFF 78.65%);
+	left: -5px;
+	width:  110%;
+	height: calc(100% + 2px);
+	left: -1px;
+	top:  -1px;
+	transform: rotate(180deg);
+	
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0) 42.19%, #FFFFFF 92.65%);
 }
 
 .header__logo {
@@ -180,10 +182,6 @@ header {
 
 @media screen and (max-width: 768px)
 {
-	header {
-		padding-top: 16px;
-	}
-
 	.header__content {
 		margin-bottom: 208px;
 		height: 320px;
@@ -238,6 +236,10 @@ header {
 		font-size: 12px;
 		background-color: white;
 		padding-left: 32px;
+	}
+
+	.header__background-gradient {
+	    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 70%, #FFFFFF 100%);
 	}
 }
 
