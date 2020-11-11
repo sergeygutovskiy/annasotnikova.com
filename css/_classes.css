@@ -78,23 +78,28 @@
 }
 
 .link {
+	position: relative;
 	display: inline-block;
-	font-size: 18px;
+	padding-right: calc(45px + 8px);
 	
+	font-size: 18px;
 	color: var(--color-red);
 	transition: all 150ms linear;
 }
 
 .link::after {
-	position: relative;
-	left: 24px;
-	/*padding-left: 24px;*/
 	content: '';
 
-	display: inline-block;
+	position: absolute;
+	right: -8px;
+	top: calc(50% - 6px);
+
 	width: 45px;
 	height: 12px;
+
 	background-image: url("/imgs/link-arrow.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
 
 	transition: all 150ms linear;
 }
@@ -241,25 +246,24 @@
 	.container__title > div > a::before {
 		position: absolute;
 		top: 50%;
-		left: -56px;
+		left: -40px;
 		content: '';
 
-		width: 40px;
+		width: 32px;
 		height: 1px;
 		background-color: var(--color-red);
 	}
 
 	.link {
+		padding-right: calc(32px + 8px);
 		font-size: 14px;
 	}
 
 	.link::after {
-		margin-left: 16px;
+		top: calc(50% - 4px);
 
 		width: 32px;
 		height: 8px;
-		background-repeat: no-repeat;
-		background-size: contain;
 	}
 
 	.container_md {

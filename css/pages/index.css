@@ -233,9 +233,10 @@ header {
 	.header__link {
 		position: relative;
 		float: right;
-		font-size: 12px;
+		padding-left: 16px;
 		background-color: white;
-		padding-left: 32px;
+
+		font-size: 12px;
 	}
 
 	.header__background-gradient {
@@ -244,7 +245,7 @@ header {
 }
 
 .about {
-	margin-top: 72px;
+	margin-top: var(--section-margin-top);
 	overflow: hidden;
 	border-bottom: solid 1px #E8E9E9;
 }
@@ -463,12 +464,11 @@ header {
 	}
 
 	.announcements__category {
-		margin-top: 8px;
+		margin-top: 12px;
 		font-size: 12px;
 	}
 
 	.announcements__title {
-		margin-top: 0;
 		font-size: 14px;
 		line-height: 20px;
 	}
@@ -717,12 +717,25 @@ header {
 	width: 460px;
 }
 
+.project__background {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(0, 0, 0, 0);
+	transition: background-color 250ms linear;
+}
+
 .project .image-container {
 	border-radius: 8px;
 }
 
 .project__panel {
 	position: absolute;
+	z-index: 2;
 	left: calc(50% - (100% - 24px * 2) / 2);
 	bottom: 0;
 
@@ -742,6 +755,10 @@ header {
 
 .project:hover .project__panel {
 	transform: translateY(8px);
+}
+
+.project:hover .project__background {
+	background-color: rgba(0, 0, 0, 0.3);
 }
 
 .project__title {
@@ -1075,7 +1092,7 @@ header {
 
 .review {
 	width: 600px;
-	height: 320px;
+	/*height: 320px;*/
 	padding: 80px 40px;
 
 	background: #FFFFFF;
@@ -1083,12 +1100,27 @@ header {
 	border-radius: 12px;
 }
 
-.review:first-child {
+.swiper-slide:nth-child(odd) .review {
 	margin-right: 32px;
+}
+
+@media screen and (max-width: 1500px)
+{
+	.review {
+		width: calc(1024px / 2 - 32px / 2 - 24px * 2);
+	}
 }
 
 @media screen and (max-width: 1024px)
 {
+	.review {
+		width: calc(786px - 24px * 2);
+	}
+
+	.swiper-slide:nth-child(odd) .review {
+		margin-right: 0;
+	}
+
 	.reviews__wrapper:nth-child(odd),
 	.reviews__wrapper:nth-child(even) {
 		justify-content: center;

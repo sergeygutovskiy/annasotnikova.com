@@ -276,7 +276,7 @@ nav {
 		margin-left: 40px;
 
 		width: 120px;
-		transform: translateX(200%);
+		transform: translateX(250%);
 	}
 
 	.nav__search-input--active {

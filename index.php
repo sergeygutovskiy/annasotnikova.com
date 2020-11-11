@@ -259,16 +259,16 @@
 							<img src="/imgs/announcements-example.jpg">
 						</div>		
 						<div class="book__content">
-							<div class="container__title">
+							<div class="container__title swiper-no-swiping">
 								<h2>Учебник официанта</h2>
 							</div>
-							<span class="book__author">Анна Сотникова</span>
-							<span class="book__price">420 ₽</span>
-							<p class="paragraph">
+							<span class="book__author swiper-no-swiping">Анна Сотникова</span>
+							<span class="book__price swiper-no-swiping">420 ₽</span>
+							<p class="paragraph swiper-no-swiping">
 								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 							</p>
 						</div>			
-						<div class="book__menu">
+						<div class="book__menu swiper-no-swiping">
 							<a class="book__menu-item" href="">
 								<img src="/imgs/cart.svg">
 								<span>Предзаказ</span>
@@ -290,16 +290,16 @@
 							<img src="/imgs/announcements-example.jpg">
 						</div>		
 						<div class="book__content">
-							<div class="container__title">
+							<div class="container__title swiper-no-swiping">
 								<h2>Учебник официанта</h2>
 							</div>
-							<span class="book__author">Анна Сотникова</span>
-							<span class="book__price">420 ₽</span>
-							<p class="paragraph">
+							<span class="book__author swiper-no-swiping">Анна Сотникова</span>
+							<span class="book__price swiper-no-swiping">420 ₽</span>
+							<p class="paragraph swiper-no-swiping">
 								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 							</p>
 						</div>			
-						<div class="book__menu">
+						<div class="book__menu swiper-no-swiping">
 							<a class="book__menu-item" href="">
 								<img src="/imgs/cart.svg">
 								<span>Предзаказ</span>
@@ -352,10 +352,11 @@
 			<div class="swiper-wrapper">
 				<article class="swiper-slide project">
 					<div class="image-container image-container_2_1">
+						<div class="project__background"></div>
 						<img class="cover-image" src="/imgs/announcements-example.jpg">
 						<div class="project__panel">
-							<span class="project__title">Sota school</span>
-							<p class="project__desc">
+							<span class="project__title swiper-no-swiping">Sota school</span>
+							<p class="project__desc swiper-no-swiping">
 								Ut enim ad minim veniam quis
 							</p>
 						</div>
@@ -363,10 +364,11 @@
 				</article>
 				<article class="swiper-slide project">
 					<div class="image-container image-container_2_1">
+						<div class="project__background"></div>
 						<img class="cover-image" src="/imgs/announcements-example.jpg">
 						<div class="project__panel">
-							<span class="project__title">Sota school</span>
-							<p class="project__desc">
+							<span class="project__title swiper-no-swiping">Sota school</span>
+							<p class="project__desc swiper-no-swiping">
 								Ut enim ad minim veniam quis
 							</p>
 						</div>
@@ -374,10 +376,11 @@
 				</article>
 				<article class="swiper-slide project">
 					<div class="image-container image-container_2_1">
+						<div class="project__background"></div>
 						<img class="cover-image" src="/imgs/announcements-example.jpg">
 						<div class="project__panel">
-							<span class="project__title">Sota school</span>
-							<p class="project__desc">
+							<span class="project__title swiper-no-swiping">Sota school</span>
+							<p class="project__desc swiper-no-swiping">
 								Ut enim ad minim veniam quis
 							</p>
 						</div>
@@ -385,10 +388,11 @@
 				</article>
 				<article class="swiper-slide project">
 					<div class="image-container image-container_2_1">
+						<div class="project__background"></div>
 						<img class="cover-image" src="/imgs/announcements-example.jpg">
 						<div class="project__panel">
-							<span class="project__title">Sota school</span>
-							<p class="project__desc">
+							<span class="project__title swiper-no-swiping">Sota school</span>
+							<p class="project__desc swiper-no-swiping">
 								Ut enim ad minim veniam quis
 							</p>
 						</div>
@@ -396,10 +400,23 @@
 				</article>
 				<article class="swiper-slide project">
 					<div class="image-container image-container_2_1">
+						<div class="project__background"></div>
 						<img class="cover-image" src="/imgs/announcements-example.jpg">
 						<div class="project__panel">
-							<span class="project__title">Sota school</span>
-							<p class="project__desc">
+							<span class="project__title swiper-no-swiping">Sota school</span>
+							<p class="project__desc swiper-no-swiping">
+								Ut enim ad minim veniam quis
+							</p>
+						</div>
+					</div>
+				</article>
+				<article class="swiper-slide project">
+					<div class="image-container image-container_2_1">
+						<div class="project__background"></div>
+						<img class="cover-image" src="/imgs/announcements-example.jpg">
+						<div class="project__panel">
+							<span class="project__title swiper-no-swiping">Sota school</span>
+							<p class="project__desc swiper-no-swiping">
 								Ut enim ad minim veniam quis
 							</p>
 						</div>
@@ -491,13 +508,14 @@
 					<article class="swiper-slide">
 						<div class="product">
 							<div class="product__image-container">
-								<div class="image-container image-container_8_5">
+								<div 
+									class="image-container image-container_8_5 zoomable-image-container">
 									<img class="cover-image" src="/imgs/announcements-example.jpg">
 								</div>
 							</div>
 							<div class="product__info">
-								<span class="product__title">SotA School</span>
-								<p class="product__text paragraph">
+								<span class="product__title swiper-no-swiping">SotA School</span>
+								<p class="product__text paragraph swiper-no-swiping">
 									Образовательный проект Анны Сотниковой, эксперта в ресторанном бизнесе. Лекции в SOTA school читают практикующие шеф-повара, управляющие ресторанов, маркетологи, финансисты и другие мастера, создающие первоклассный сервис. Запуск школы в 2021 г.
 								</p>							
 							</div>							
@@ -506,13 +524,13 @@
 					<article class="swiper-slide">
 						<div class="product">
 							<div class="product__image-container">
-								<div class="image-container image-container_8_5">
+								<div class="image-container image-container_8_5 zoomable-image-container">
 									<img class="cover-image" src="/imgs/announcements-example.jpg">
 								</div>
 							</div>
 							<div class="product__info">
-								<span class="product__title">SotA School</span>
-								<p class="product__text paragraph">
+								<span class="product__title swiper-no-swiping">SotA School</span>
+								<p class="product__text paragraph swiper-no-swiping">
 									Образовательный проект Анны Сотниковой, эксперта в ресторанном бизнесе. Лекции в SOTA school читают практикующие шеф-повара, управляющие ресторанов, маркетологи, финансисты и другие мастера, создающие первоклассный сервис. Запуск школы в 2021 г.
 								</p>							
 							</div>							
@@ -533,6 +551,7 @@
 	<script>
 		let products = new Swiper(".products .swiper-container", {
 			slidesPerView: 1,
+			// simulateTouch: false,
 			// centeredSlides: true,
 			autoHeight: true,
 			navigation: {
@@ -559,7 +578,7 @@
 				<div class="swiper-wrapper">
 					<div class="swiper-slide reviews__wrapper">
 						<article class="review">
-							<p class="paragraph">
+							<p class="paragraph swiper-no-swiping">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -571,7 +590,7 @@
 					</div>
 					<div class="swiper-slide reviews__wrapper">
 						<article class="review">
-							<p class="paragraph">
+							<p class="paragraph swiper-no-swiping">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -583,7 +602,7 @@
 					</div>
 					<div class="swiper-slide reviews__wrapper">
 						<article class="review">
-							<p class="paragraph">
+							<p class="paragraph swiper-no-swiping">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -595,7 +614,31 @@
 					</div>
 					<div class="swiper-slide reviews__wrapper">
 						<article class="review">
-							<p class="paragraph">
+							<p class="paragraph swiper-no-swiping">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</article>
+					</div>
+					<div class="swiper-slide reviews__wrapper">
+						<article class="review">
+							<p class="paragraph swiper-no-swiping">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</article>
+					</div>
+					<div class="swiper-slide reviews__wrapper">
+						<article class="review">
+							<p class="paragraph swiper-no-swiping">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -624,11 +667,20 @@
 			pagination: {
 				el: '.reviews .pagination__info',
 				type: 'custom',
-				renderCustom: custom_pagination_render 
+				renderCustom: custom_pagination_render
 			},
 			breakpoints: {
 				1025: {
 					slidesPerView: 2,
+					pagination: {
+						el: '.reviews .pagination__info',
+						type: 'custom',
+						renderCustom: function custom_pagination_render (swiper, current, total) {
+							return '<span>' + (Math.floor(current / 2) + 1) + '</span>' 
+								+ '<div></div>' 
+								+ '<span>' + (Math.floor(total / 2) + 1) + '</span>';
+						} 
+					}
 				}
 			}
 		});
