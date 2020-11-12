@@ -3,20 +3,7 @@
 
 <head>
 	<title>Главная</title>
-	<meta content="width=device-width, initial-scale=1" name="viewport" />
-
-	<!-- jquery -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-	<!-- swiper -->
-	<link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-	<!-- font-awesome -->
-	<link rel="stylesheet" href="fonts/font-awesome/css/all.css">
-	<!-- montserrat -->
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-	<!-- cormorant -->
-	<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&display=swap" rel="stylesheet">
-
+	<?php require 'templates/_header.php'; ?>
 	<link rel="stylesheet" type="text/css" href="css/pages/index.css">
 </head>
 <body>
@@ -30,90 +17,8 @@
 		}
 	</script>
 
-	<!-- navigation menu -->
-	<section class="nav-menu">
-		<ul class="nav-menu__list">
-			<li class="nav-menu__list-item nav-menu__list-item--active"><a href="">Главная</a></li>
-			<li class="nav-menu__list-item"><a href="">Об авторе</a></li>
-			<li class="nav-menu__list-item"><a href="">Книги</a></li>
-			<li class="nav-menu__list-item"><a href="">Проекты</a></li>
-			<li class="nav-menu__list-item"><a href="">блог</a></li>
-			<li class="nav-menu__list-item"><a href="">пресс-Кит</a></li>
-			<li class="nav-menu__list-item"><a href="">пресс-Кит</a></li>
-		</ul>
-		<ul class="nav-menu__social">
-			<li class="nav-menu__social-item">
-				<a href=""><img src="/imgs/social/inst.png"></a>
-			</li>
-			<li class="nav-menu__social-item">
-				<a href=""><img src="/imgs/social/inst.png"></a>
-			</li>
-			<li class="nav-menu__social-item">
-				<a href=""><img src="/imgs/social/inst.png"></a>
-			</li>
-			<li class="nav-menu__social-item">
-				<a href=""><img src="/imgs/social/inst.png"></a>
-			</li>
-			<li class="nav-menu__social-item">
-				<a href=""><img src="/imgs/social/inst.png"></a>
-			</li>
-			<li class="nav-menu__social-item">
-				<a href=""><img src="/imgs/social/inst.png"></a>
-			</li>
-			<li class="nav-menu__social-item">
-				<a href=""><img src="/imgs/social/inst.png"></a>
-			</li>
-		</ul>
-	</section>
-
 	<!-- navigation -->
-	<nav>
-		<section class="container nav__container">
-			<div class="nav__language">
-				<a href="/" class="active">RU</a>
-				<a href="/">EN</a>
-			</div>
-			<div class="nav__location">
-				<i class="fal fa-map-marker-alt"></i>
-				Санкт-Петербург
-			</div>
-			<div class="nav__right">
-				<div class="nav__search">
-					<input type="text" class="nav__search-input" placeholder="Поиск">
-					<a href="#"><img src="/imgs/pupa.png"></a>
-				</div>
-				<div class="nav__account">
-					<a href="#"><img src="/imgs/account.jpg"></a>
-				</div>
-				<button class="nav__menu-button">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
-			</div>
-		</section>
-	</nav>
-
-	<script>
-		$(".nav__search a").click(function () {
-			$(".nav__search-input").toggleClass("nav__search-input--active");
-		});
-
-		$(".nav__menu-button").click(function () {
-			$(".nav-menu").toggleClass("nav-menu--active");
-			$(".nav__menu-button").toggleClass("nav__menu-button--active");
-
-			// if (window.innerWidth <= 768)
-			// {
-				$("nav").toggleClass("nav_mobile--active");
-
-				if ($("nav").hasClass("nav_mobile--active"))
-					$('html, body').css({ "overflow-y": 'hidden', height: '100%' });
-				else
-					$('html, body').css({ "overflow-y": 'auto', height: 'auto' });
-			// }
-		});
-	</script>
+	<?php require 'templates/_navigation.php'; ?>
 
 	<!-- header banner -->
 	<header class="container">
@@ -724,47 +629,6 @@
 	</section>
 
 	<!-- footer -->
-	<footer>
-		<div class="container">			
-			<div class="footer__content">
-				<div class="footer__left">
-					<ul>
-						<li><a href="">Главная</a></li>
-						<li><a href="">Об авторе</a></li>
-						<li><a href="">Книги</a></li>
-						<li><a href="">Проекты</a></li>
-					</ul>
-					<ul>
-						<li><a href="">Блог</a></li>
-						<li><a href="">Пресса</a></li>
-						<li><a href="">Контакты</a></li>
-					</ul>
-				</div>
-				<div class="footer__center">
-					<a class="footer__number" href="">+7 (900) 000-00-00</a>
-					<a class="footer__email" href="">annasotnikova2803@gmail.com</a>
-					<span class="footer__social-label">Социальные сети:</span>
-					<div class="footer__social-links">
-						<a href=""><img src="/imgs/social/inst.png"></a>
-						<a href=""><img src="/imgs/social/inst.png"></a>
-						<a href=""><img src="/imgs/social/inst.png"></a>
-						<a href=""><img src="/imgs/social/inst.png"></a>
-						<a href=""><img src="/imgs/social/inst.png"></a>
-						<a href=""><img src="/imgs/social/inst.png"></a>
-					</div>
-				</div>
-				<div class="footer-mailing">
-					<span class="footer-mailing__title">Подписаться на новости:</span>
-					<form>
-						<input class="footer-mailing__input" placeholder="e-mail">
-						<button class="footer-mailing__button"></button>
-					</form>
-					<p class="footer-mailing__text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-					</p>
-				</div>
-			</div>
-		</div>
-	</footer>
+	<?php require 'templates/_footer.php'; ?>
 
 </body>

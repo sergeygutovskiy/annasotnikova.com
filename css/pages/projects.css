@@ -1,0 +1,158 @@
+.projects-container {
+	margin-left: auto;
+	margin-right: auto;
+
+	max-width: 1460px;
+	width: 100%;
+	padding: 0 80px;
+}
+
+.projects-logo {
+	position: absolute;
+	top: -48px;
+	left: 0;
+	width: 320px;
+}
+
+header {
+	z-index: 1;
+}
+
+.header__content {
+	padding-top: 96px;
+	padding-left: 184px;
+}
+
+.header__content p {
+	margin-top: 16px;
+	max-width: 450px;
+}
+
+@media screen and (max-width: 768px)
+{
+	.projects-container {
+		padding: 0 24px;
+	}
+
+	.projects-logo {
+		top: -40px;
+		left: -40px;
+		width: 260px;
+	}
+
+	.header__content {
+		padding-top: 128px;
+		padding-left: 0;
+	}
+}
+
+.projects {
+	margin-top: 96px;
+	display: flex;
+	flex-direction: column;
+}
+
+.project {
+	max-width: 940px;
+	display: flex;
+	align-items: flex-start;
+}
+
+.project:not(:first-child) {
+	margin-top: 72px;
+}
+
+.project__image-container {
+	flex-basis: 560px;
+	flex-grow: 0;
+	flex-shrink: 0;
+	border-radius: 16px;
+	overflow: hidden;
+}
+
+.project:hover img {
+	transform: scale(1.1);
+}
+
+.project__info {
+	padding-top: 72px;
+	padding-left: 72px;
+}
+
+.project__title {
+	display: inline-block;
+	font-family: AireRomanStd;
+	font-size: 32px;
+	letter-spacing: 0.06em;
+	color: var(--color-black);
+}
+
+.project__paragraph {
+	margin-top: 16px;
+}
+
+.project__link {
+	margin-top: 24px;
+}
+
+.project__link > div {
+	margin-left: 72px;
+}
+
+@media screen and (max-width: 1460px)
+{
+	.projects {
+		max-width: 1024px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (max-width: 1024px)
+{
+	.project__image-container {
+		flex-basis: 400px;
+	}
+}
+
+@media screen and (max-width: 768px)
+{
+	.projects {
+		margin-top: 56px;
+	}
+
+	.project {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.project:not(:first-child) {
+		margin-top: 56px;
+	}
+
+	.project__image-container {
+		width: 100%;
+		flex-basis: auto;
+	}
+
+	.project__info {
+		margin-top: 24px;
+		padding: 0;
+	}
+
+	.project__title {
+		font-size: 28px;
+	}
+
+	.project__paragraph {
+		margin-top: 8px;
+	}
+
+	.project__link {
+		margin-top: 16px;
+	}
+
+	.project__link > div {
+		margin-left: 40px;
+	}
+}

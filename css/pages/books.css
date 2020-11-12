@@ -1,0 +1,152 @@
+.books-container {
+	margin-left: auto;
+	margin-right: auto;
+
+	max-width: 1460px;
+	width: 100%;
+	padding: 0 80px;
+}
+
+.books-logo {
+	position: absolute;
+	top: -48px;
+	left: 0;
+	width: 320px;
+}
+
+header {
+	z-index: 1;
+}
+
+.header__content {
+	padding-top: 96px;
+	padding-left: 184px;
+}
+
+.header__content p {
+	margin-top: 16px;
+	max-width: 450px;
+}
+
+@media screen and (max-width: 768px)
+{
+	.books-container {
+		padding: 0 24px;
+	}
+
+	.books-logo {
+		top: -40px;
+		left: -40px;
+		width: 260px;
+	}
+
+	.header__content {
+		padding-top: 128px;
+		padding-left: 0;
+	}
+}
+
+.books__content {
+	margin-top: -32px;
+	margin-right: -32px;
+	padding-top: 96px;
+
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.book {
+	margin-top: 32px;
+	margin-right: 32px;
+	width: 360px;
+}
+
+/*.book:last-child:nth-child(odd)::after {
+}*/
+
+.books__image-container {
+	border-radius: 8px;
+}
+
+.book__button {
+	position: absolute;
+	bottom: 0;
+	left: calc(50% - 200px / 2);
+
+	width: 200px;
+	padding: 16px 0;
+	background-color: white;
+
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 0.03em;
+
+	transform: translateY(100%);
+	transition: transform 150ms linear;
+}
+
+.book:hover .book__button {
+	transform: translateY(20%);
+}
+
+.book__primary-info {
+	margin-top: 32px;
+}
+
+.book__title {
+	font-size: 18px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+
+.book__price {
+	float: right;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.book__paragraph {
+	margin-top: 24px;
+}
+
+@media screen and (max-width: 1324px)
+{
+	.books__content {
+		margin-left: auto;
+		margin-right: auto;
+
+		max-width: 768px;
+	}
+
+	.book {
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 768px)
+{
+	.books__content {
+		padding-top: 64px;
+		margin-top: -64px;
+		flex-direction: column;
+	}
+
+	.book {
+		margin-top: 64px;
+		width: 100%;
+	}
+
+	.book__button {
+		font-size: 14px;
+	}
+
+	.book__title {
+		font-size: 16px;
+	}
+
+	.book__price {
+		font-size: 16px;
+	}
+}

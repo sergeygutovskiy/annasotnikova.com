@@ -1,7 +1,11 @@
 footer {
+	margin-top: auto;
+}
+
+.footer__container {
 	margin-top: 72px;
 	padding: 64px 0;
-	background-color: #F6F6F8;
+	background-color: #F6F6F8;	
 }
 
 .footer__content {
@@ -175,9 +179,13 @@ footer {
 
 @media screen and (max-width: 768px)
 {
-	footer {
+/*	footer {
 		padding-top: 24px;
 		padding-bottom: 24px;
+	}*/
+
+	.footer__container {
+		padding: 24px 0;
 	}
 
 	.footer__content {
