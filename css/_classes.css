@@ -17,7 +17,7 @@
 	font-family: AireRomanStd, sans-serif;
 	text-transform: uppercase;
 	font-size: 40px;
-	line-height: 38px;
+	line-height: 42px;
 	letter-spacing: 0.06em;
 	color: var(--color-red);
 	font-weight: normal;
@@ -254,7 +254,7 @@
 
 	.container__title > h2 {
 		font-size: 28px;
-		line-height: 28px;
+		line-height: 32px;
 	}
 
 	.container__title > div > a {

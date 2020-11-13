@@ -9,14 +9,6 @@
 <body>
 	<!-- <div class="body-blur"></div> -->
 
-	<script>
-		function custom_pagination_render (swiper, current, total) {
-			return '<span>' + current + '</span>' 
-				+ '<div></div>' 
-				+ '<span>' + total + '</span>';
-		}
-	</script>
-
 	<!-- navigation -->
 	<?php require 'templates/_navigation.php'; ?>
 
@@ -456,8 +448,6 @@
 	<script>
 		let products = new Swiper(".products .swiper-container", {
 			slidesPerView: 1,
-			// simulateTouch: false,
-			// centeredSlides: true,
 			autoHeight: true,
 			navigation: {
 				nextEl: '.products .pagination__button--next',

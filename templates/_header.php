@@ -13,3 +13,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" type="text/css" href="css/bundle.css">
+
+<!-- js scripts -->
+<script>
+	// swiper pagination renderer
+	function custom_pagination_render (swiper, current, total) {
+		return '<span>' + current + '</span>' 
+			+ '<div></div>' 
+			+ '<span>' + total + '</span>';
+	}
+</script>
