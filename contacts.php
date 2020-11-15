@@ -23,15 +23,15 @@
 		<div class="contacts__links">
 			<div class="contacts__link">
 				<span>instagram</span>
-				<span>@sotnikovaanna</span>
+				<a href="/">@sotnikovaanna</a>
 			</div>
 			<div class="contacts__link">
 				<span>vkontakte</span>
-				<span>/sotnikova28</span>
+				<a href="/">/sotnikova28</a>
 			</div>
 			<div class="contacts__link">
 				<span>e-mail</span>
-				<span>annasotnikova2803@gmail.com</span>
+				<a href="/">annasotnikova2803@gmail.com</a>
 			</div>
 		</div>
 		<div class="contacts__footer">

@@ -1,0 +1,148 @@
+.blog-container {
+	margin-left: auto;
+	margin-right: auto;
+
+	max-width: 1460px;
+	width: 100%;
+	padding: 0 80px;
+}
+
+.blog-logo {
+	position: absolute;
+	top: -48px;
+	left: 0;
+	width: 320px;
+}
+
+header {
+	z-index: 1;
+}
+
+.header__content {
+	padding-top: 96px;
+	padding-left: 184px;
+}
+
+.header__content p {
+	margin-top: 16px;
+	max-width: 450px;
+}
+
+@media screen and (max-width: 768px)
+{
+	.blog-container {
+		padding: 0 24px;
+	}
+
+	.blog-logo {
+		top: -40px;
+		left: -40px;
+		width: 260px;
+	}
+
+	.header__content {
+		padding-top: 128px;
+		padding-left: 0;
+	}
+}
+
+.blog__content {
+	margin-left: auto;
+	margin-right: auto;
+	/* 1088px */
+	max-width: calc(320px * 3 + 64px * 2);
+
+	padding-top: 72px;
+	margin-top: -64px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;	
+}
+
+.blog-item {
+	margin-top: 64px;
+
+	width: 320px;
+	padding: 24px;
+	border-radius: 12px;
+	transition: all 150ms linear;
+
+	box-shadow: 0px 5px 15px rgba(8, 24, 81, 0.15);
+}
+
+.blog-item:hover {
+	transform: translateY(-8px);
+	box-shadow: 0px 10px 30px rgba(8, 24, 81, 0.15);
+}
+
+.blog-item:hover .blog-item__link {
+	opacity: 1;
+}
+
+.blog-item .image-container {
+	border-radius: 4px;
+}
+
+.blog-item__title {
+	margin-top: 24px;
+	display: block;
+	font-size: 18px;
+}
+
+.blog-item__info {
+	margin-top: 16px;
+}
+
+.blog-item__link {
+	margin-top: 12px;
+	float: right;
+
+	font-size: 11px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--color-red);
+
+	opacity: 0;
+	transition: opacity 150ms linear;
+}
+
+.blog-item__link::after {
+	position: relative;
+    bottom: 3px;
+    margin-left: 8px;
+
+	content: '';
+	display: inline-block;
+	width: 45px;
+	height: 1px;
+	background-color: var(--color-red);
+}
+
+@media screen and (max-width: 1248px)
+{
+	.blog__content {
+		max-width: calc(320px * 2 + 64px);
+	}
+}
+
+@media screen and (max-width: 768px)
+{
+	.blog__content {
+		padding-top: 56px;
+		margin-top: -40px;
+	}
+
+	.blog-item {
+		margin-top: 40px;
+		width: 100%;
+	}
+
+	.blog-item__title {
+		font-size: 14px;
+	}
+
+	.blog-item__info {
+		font-size: 12px;
+		line-height: 20px;
+	}
+}

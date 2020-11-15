@@ -29,12 +29,13 @@
 	<section class="books-container">
 		<div class="books__content">
 			<article class="book">
-				<div class="books__image-container image-container image-container_4_5">
+				<div 
+				class="books__image-container image-container image-container_4_5">
 					<img class="cover-image" src="/imgs/announcements-example.jpg">
-					<a class="book__button" href="">купить</a>
+					<a class="book__button" href="/book.php">купить</a>
 				</div>
 				<div class="book__primary-info">
-					<span class="book__title">Книга официанта</span>
+					<a href="/book.php" class="book__title">Книга официанта</a>
 					<span class="book__price">420 ₽</span>
 				</div>
 				<p class="book__paragraph paragraph">
@@ -42,12 +43,13 @@
 				</p>
 			</article>
 			<article class="book">
-				<div class="books__image-container image-container image-container_4_5">
+				<div 
+				class="books__image-container image-container image-container_4_5">
 					<img class="cover-image" src="/imgs/announcements-example.jpg">
-					<a class="book__button" href="">купить</a>
+					<a class="book__button" href="/book.php">купить</a>
 				</div>
 				<div class="book__primary-info">
-					<span class="book__title">Книга официанта</span>
+					<a href="/book.php" class="book__title">Книга официанта</a>
 					<span class="book__price">420 ₽</span>
 				</div>
 				<p class="book__paragraph paragraph">
@@ -55,12 +57,13 @@
 				</p>
 			</article>
 			<article class="book">
-				<div class="books__image-container image-container image-container_4_5">
+				<div 
+				class="books__image-container image-container image-container_4_5">
 					<img class="cover-image" src="/imgs/announcements-example.jpg">
-					<a class="book__button" href="">купить</a>
+					<a class="book__button" href="/book.php">купить</a>
 				</div>
 				<div class="book__primary-info">
-					<span class="book__title">Книга официанта</span>
+					<a href="/book.php" class="book__title">Книга официанта</a>
 					<span class="book__price">420 ₽</span>
 				</div>
 				<p class="book__paragraph paragraph">

@@ -28,38 +28,40 @@
 	<!-- navigation menu -->
 	<section class="nav-menu">
 		<ul class="nav-menu__list">
-			<li class="nav-menu__list-item nav-menu__list-item--active"><a href="">Главная</a></li>
-			<li class="nav-menu__list-item"><a href="">Об авторе</a></li>
-			<li class="nav-menu__list-item"><a href="">Книги</a></li>
-			<li class="nav-menu__list-item"><a href="">Проекты</a></li>
-			<li class="nav-menu__list-item"><a href="">блог</a></li>
-			<li class="nav-menu__list-item"><a href="">пресс-Кит</a></li>
-			<li class="nav-menu__list-item"><a href="">пресс-Кит</a></li>
+			<li class="nav-menu__list-item nav-menu__list-item--active">
+				<a href="/">Главная</a>
+			</li>
+			<li class="nav-menu__list-item"><a href="/about.php">Об авторе</a></li>
+			<li class="nav-menu__list-item"><a href="/books.php">Книги</a></li>
+			<li class="nav-menu__list-item"><a href="/projects.php">Проекты</a></li>
+			<li class="nav-menu__list-item"><a href="/blog.php">блог</a></li>
+			<li class="nav-menu__list-item"><a href="/press.php">пресс-Кит</a></li>
+			<li class="nav-menu__list-item"><a href="/contacts.php">контакты</a></li>
 		</ul>
 		<ul class="nav-menu__social">
 			<li class="nav-menu__social-item">
 				<a href=""><img src="/imgs/social/inst.png"></a>
 			</li>
 			<li class="nav-menu__social-item">
-				<a href=""><img src="/imgs/social/inst.png"></a>
+				<a href=""><img src="/imgs/social/facebook.svg"></a>
 			</li>
 			<li class="nav-menu__social-item">
-				<a href=""><img src="/imgs/social/inst.png"></a>
+				<a href=""><img src="/imgs/social/vk.svg"></a>
 			</li>
 			<li class="nav-menu__social-item">
-				<a href=""><img src="/imgs/social/inst.png"></a>
+				<a href=""><img src="/imgs/social/wa.svg"></a>
 			</li>
 			<li class="nav-menu__social-item">
-				<a href=""><img src="/imgs/social/inst.png"></a>
+				<a href=""><img src="/imgs/social/youtube.svg"></a>
 			</li>
 			<li class="nav-menu__social-item">
-				<a href=""><img src="/imgs/social/inst.png"></a>
-			</li>
-			<li class="nav-menu__social-item">
-				<a href=""><img src="/imgs/social/inst.png"></a>
+				<a href=""><img src="/imgs/social/telegram.svg"></a>
 			</li>
 		</ul>
 	</section>
+
+	<!-- blur -->
+	<div class="nav-blur"></div>
 </nav>
 
 <script>
@@ -71,14 +73,42 @@
 		$(".nav-menu").toggleClass("nav-menu--active");
 		$(".nav__menu-button").toggleClass("nav__menu-button--active");
 
-		// if (window.innerWidth <= 768)
-		// {
-			$("nav").toggleClass("nav_mobile--active");
+		$("nav").toggleClass("nav_mobile--active");
 
-			if ($("nav").hasClass("nav_mobile--active"))
-				$('html, body').css({ "overflow-y": 'hidden', height: 'auto' });
-			else
-				$('html, body').css({ "overflow-y": 'auto', height: 'auto' });
-		// }
+		if ($(".nav-blur").hasClass("nav-blur--active"))
+		{
+			$(".nav-blur").removeClass("nav-blur--active");
+			setTimeout(
+				function() { $(".nav-blur").hide() }, 250
+			);
+		}
+		else
+		{
+			$(".nav-blur").show();
+			setTimeout(
+				function() { $(".nav-blur").addClass("nav-blur--active") }, 5
+			);
+		}
 	});
+
+	/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+	var prevScrollpos = window.pageYOffset;
+	
+	window.onscroll = function() {
+		var currentScrollPos = window.pageYOffset;
+
+		if (!$(".nav-blur").hasClass("nav-blur--active"))
+		{
+			if (prevScrollpos > currentScrollPos) 
+			{
+				$("nav").removeClass("nav--hidden");
+			} 
+			else 
+			{
+				$("nav").addClass("nav--hidden");
+			}
+		}
+
+		prevScrollpos = currentScrollPos;
+	}
 </script>

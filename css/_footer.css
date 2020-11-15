@@ -51,6 +51,12 @@ footer {
 	font-size: 14px;
 	font-weight: 400;
 	letter-spacing: 0.04em;
+
+	transition: color 150ms linear;
+}
+
+.footer__number:hover, .footer__email:hover {
+	color: var(--color-red);
 }
 
 .footer__email {
@@ -73,7 +79,12 @@ footer {
 .footer__social-links img {
 	width: 24px;
 	height: 24px;
+	/*transition: filter 150ms linear;*/
 } 
+
+.footer__social-links img:hover {
+	filter: invert(46%) sepia(93%) saturate(7373%) hue-rotate(346deg) brightness(82%) contrast(120%);
+}
 
 .footer-mailing__title {
 	display: block;

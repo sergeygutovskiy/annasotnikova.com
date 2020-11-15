@@ -32,7 +32,7 @@ header {
 	padding-bottom: 4px;
 }
 
-.contacts__link span:first-child {
+.contacts__link span {
 	font-weight: 300;
 	font-size: 14px;
 	letter-spacing: 0.08em;
@@ -42,7 +42,7 @@ header {
 	border-bottom: solid 1px var(--color-red);
 }
 
-.contacts__link span:last-child {
+.contacts__link a {
 	margin-left: 8px;
 
 	font-size: 16px;
@@ -50,7 +50,13 @@ header {
 	letter-spacing: 0.02em;
 
 	border-bottom: solid 1px transparent;
+
+	transition: color 150ms linear;
 } 
+
+.contacts__link a:hover {
+	color: var(--color-red);
+}
 
 .contacts__link:not(:last-child) {
 	margin-right: 60px;
@@ -157,6 +163,12 @@ header {
 	text-transform: uppercase;
 
 	border-bottom: solid 1px var(--color-red);
+
+	transition: color 150ms linear;
+}
+
+.contacts__footer-links a:hover {
+	color: var(--color-red);
 }
 
 @media screen and (max-width: 1440px)
@@ -235,11 +247,11 @@ header {
 		margin-bottom: 32px;
 	}
 
-	.contacts__link span:first-child {
+	.contacts__link span {
 		font-size: 12px;
 	}
 
-	.contacts__link span:last-child {
+	.contacts__link a {
 		margin-left: 8px;
 		font-size: 14px;
 	} 

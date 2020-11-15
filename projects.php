@@ -35,13 +35,13 @@
 					</div>
 				</div>
 				<div class="project__info">
-					<span class="project__title">Дети на кухне</span>
+					<a href="/article.php" class="project__title">Дети на кухне</a>
 					<p class="project__paragraph paragraph">
 						Кулинарная школа для детей, где они
 						учатся готовить круче, чем взрослые
 					</p>
 					<div class="project__link container__title">
-						<div><a href="/">узнать больше</a></div>
+						<div><a href="/article.php">узнать больше</a></div>
 					</div>
 				</div>
 			</article>
@@ -52,13 +52,13 @@
 					</div>
 				</div>
 				<div class="project__info">
-					<span class="project__title">Дети на кухне</span>
+					<a href="/article.php" class="project__title">Дети на кухне</a>
 					<p class="project__paragraph paragraph">
 						Кулинарная школа для детей, где они
 						учатся готовить круче, чем взрослые
 					</p>
 					<div class="project__link container__title">
-						<div><a href="/">узнать больше</a></div>
+						<div><a href="/article.php">узнать больше</a></div>
 					</div>
 				</div>
 			</article>
@@ -69,13 +69,13 @@
 					</div>
 				</div>
 				<div class="project__info">
-					<span class="project__title">Дети на кухне</span>
+					<a href="/article.php" class="project__title">Дети на кухне</a>
 					<p class="project__paragraph paragraph">
 						Кулинарная школа для детей, где они
 						учатся готовить круче, чем взрослые
 					</p>
 					<div class="project__link container__title">
-						<div><a href="/">узнать больше</a></div>
+						<div><a href="/article.php">узнать больше</a></div>
 					</div>
 				</div>
 			</article>

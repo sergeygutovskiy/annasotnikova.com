@@ -1,0 +1,157 @@
+.press-container {
+	margin-left: auto;
+	margin-right: auto;
+
+	max-width: 1460px;
+	width: 100%;
+	padding: 0 80px;
+}
+
+.press-logo {
+	position: absolute;
+	top: -48px;
+	left: 0;
+	width: 320px;
+}
+
+header {
+	z-index: 1;
+}
+
+.header__content {
+	padding-top: 96px;
+	padding-left: 184px;
+}
+
+.header__content p {
+	margin-top: 16px;
+	max-width: 450px;
+}
+
+@media screen and (max-width: 768px)
+{
+	.press-container {
+		padding: 0 24px;
+	}
+
+	.press-logo {
+		top: -40px;
+		left: -40px;
+		width: 260px;
+	}
+
+	.header__content {
+		padding-top: 128px;
+		padding-left: 0;
+	}
+}
+
+.press__tabs-navigation {
+	margin-top: 64px;
+}
+
+.tabs-navigation {
+	margin-left: auto;
+	margin-right: auto;
+
+	max-width: 1000px;
+	border-bottom: solid 1px #E8E9E9;
+}
+
+.tabs-navigation__content {
+	margin-left: auto;
+	margin-right: auto;
+
+	display: flex;
+	justify-content: space-between;
+
+	max-width: 720px;	
+}
+
+.tabs-navigation__item {
+	padding-bottom: 8px;
+
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+
+	border-bottom: solid 3px transparent;
+}
+
+.tabs-navigation__item::after {
+	content: attr(data-count);
+    
+    position: absolute;
+	transform: translate(50%, -50%);
+
+	font-size: 9px;
+	color: var(--color-grey);
+}
+
+.press__content {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -100px;
+	padding-top: 72px;
+
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	max-width: 1000px;
+}
+
+.press-item {
+	position: relative;
+	margin-top: 100px;
+
+	width: 450px;
+	padding-bottom: 80px;
+}
+
+.press-item__image-container {
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.press-item__panel {
+	position: absolute;
+	left: calc(50% - (450px - 24px * 2) / 2);
+	
+	transform: translateY(-32px);
+
+	width: calc(450px - 24px * 2);
+	padding: 8px;
+
+	text-align: center;
+	background-color: white;
+	border-radius: 8px;
+}
+
+.press-item__category {
+	display: block;
+
+	font-size: 12px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: var(--color-red);
+}
+
+.press-item__title {
+	margin-top: 24px;
+	display: block;
+
+	font-size: 18px;
+	line-height: 26px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+
+.press-item__date {
+	margin-top: 16px;
+
+	font-size: 12px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: var(--color-grey);
+}

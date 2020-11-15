@@ -7,8 +7,6 @@
 	<link rel="stylesheet" type="text/css" href="css/pages/index.css">
 </head>
 <body>
-	<!-- <div class="body-blur"></div> -->
-
 	<!-- navigation -->
 	<?php require 'templates/_navigation.php'; ?>
 
@@ -57,69 +55,50 @@
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
 				<article class="swiper-slide">
-					<div class="image-container image-container_2_1 zoomable-image-container ">
+					<a href="/article.php" 
+					class="image-container image-container_2_1 zoomable-image-container ">
 						<img class="cover-image" src="/imgs/announcements-example.jpg">
-					</div>
+					</a>
 					<span class="announcements__category">Онлайн-семинар</span>
-					<span class="announcements__title">
+					<a href="/article.php" class="announcements__title swiper-no-swiping">
 						Ресторанный бизнес 2020: новая реальность
 						Ресторанный бизнес 2020: новая реальность
-					</span>
+					</a>
 					<span class="announcements__date">16 июля, 15:00</span>
 				</article>
 				<article class="swiper-slide">
-					<div class="image-container image-container_2_1 zoomable-image-container ">
+					<a href="/article.php" 
+					class="image-container image-container_2_1 zoomable-image-container ">
 						<img class="cover-image" src="/imgs/announcements-example.jpg">
-					</div>
+					</a>
 					<span class="announcements__category">Онлайн-семинар</span>
-					<span class="announcements__title">
+					<a href="/article.php" class="announcements__title swiper-no-swiping">
 						Ресторанный бизнес 2020: новая реальность
-						Ресторанный бизнес 2020: новая реальность
-					</span>
+					</a>
 					<span class="announcements__date">16 июля, 15:00</span>
 				</article>
 				<article class="swiper-slide">
-					<div class="image-container image-container_2_1 zoomable-image-container ">
+					<a href="/article.php" 
+					class="image-container image-container_2_1 zoomable-image-container ">
 						<img class="cover-image" src="/imgs/announcements-example.jpg">
-					</div>
+					</a>
 					<span class="announcements__category">Онлайн-семинар</span>
-					<span class="announcements__title">
+					<a href="/article.php" class="announcements__title swiper-no-swiping">
 						Ресторанный бизнес 2020: новая реальность
 						Ресторанный бизнес 2020: новая реальность
-					</span>
+					</a>
 					<span class="announcements__date">16 июля, 15:00</span>
 				</article>
 				<article class="swiper-slide">
-					<div class="image-container image-container_2_1 zoomable-image-container ">
+					<a href="/article.php" 
+					class="image-container image-container_2_1 zoomable-image-container ">
 						<img class="cover-image" src="/imgs/announcements-example.jpg">
-					</div>
+					</a>
 					<span class="announcements__category">Онлайн-семинар</span>
-					<span class="announcements__title">
+					<a href="/article.php" class="announcements__title swiper-no-swiping">
 						Ресторанный бизнес 2020: новая реальность
 						Ресторанный бизнес 2020: новая реальность
-					</span>
-					<span class="announcements__date">16 июля, 15:00</span>
-				</article>
-				<article class="swiper-slide">
-					<div class="image-container image-container_2_1 zoomable-image-container ">
-						<img class="cover-image" src="/imgs/announcements-example.jpg">
-					</div>
-					<span class="announcements__category">Онлайн-семинар</span>
-					<span class="announcements__title">
-						Ресторанный бизнес 2020: новая реальность
-						Ресторанный бизнес 2020: новая реальность
-					</span>
-					<span class="announcements__date">16 июля, 15:00</span>
-				</article>
-				<article class="swiper-slide">
-					<div class="image-container image-container_2_1 zoomable-image-container ">
-						<img class="cover-image" src="/imgs/announcements-example.jpg">
-					</div>
-					<span class="announcements__category">Онлайн-семинар</span>
-					<span class="announcements__title">
-						Ресторанный бизнес 2020: новая реальность
-						Ресторанный бизнес 2020: новая реальность
-					</span>
+					</a>
 					<span class="announcements__date">16 июля, 15:00</span>
 				</article>
 			</div>
@@ -157,7 +136,7 @@
 						</div>		
 						<div class="book__content">
 							<div class="container__title swiper-no-swiping">
-								<h2>Учебник официанта</h2>
+								<h2><a href="/book.php">Учебник официанта</a></h2>
 							</div>
 							<span class="book__author swiper-no-swiping">Анна Сотникова</span>
 							<span class="book__price swiper-no-swiping">420 ₽</span>
@@ -170,7 +149,7 @@
 								<img src="/imgs/cart.svg">
 								<span>Предзаказ</span>
 							</a>
-							<a class="book__menu-item" href="">
+							<a class="book__menu-item" href="/book.php">
 								<img src="/imgs/plus.svg">
 								<span>Узнать больше</span>
 							</a>
@@ -188,7 +167,7 @@
 						</div>		
 						<div class="book__content">
 							<div class="container__title swiper-no-swiping">
-								<h2>Учебник официанта</h2>
+								<h2><a href="/book.php">Учебник официанта</a></h2>
 							</div>
 							<span class="book__author swiper-no-swiping">Анна Сотникова</span>
 							<span class="book__price swiper-no-swiping">420 ₽</span>
@@ -201,7 +180,38 @@
 								<img src="/imgs/cart.svg">
 								<span>Предзаказ</span>
 							</a>
+							<a class="book__menu-item" href="/book.php">
+								<img src="/imgs/plus.svg">
+								<span>Узнать больше</span>
+							</a>
 							<a class="book__menu-item" href="">
+								<img src="/imgs/book-icon.svg">
+								<span>Читать</span>
+							</a>
+						</div>
+					</div>
+				</article>
+				<article class="swiper-slide">
+					<div class="book">
+						<div class="book__image-container">
+							<img src="/imgs/announcements-example.jpg">
+						</div>		
+						<div class="book__content">
+							<div class="container__title swiper-no-swiping">
+								<h2><a href="/book.php">Учебник официанта</a></h2>
+							</div>
+							<span class="book__author swiper-no-swiping">Анна Сотникова</span>
+							<span class="book__price swiper-no-swiping">420 ₽</span>
+							<p class="paragraph swiper-no-swiping">
+								Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+							</p>
+						</div>			
+						<div class="book__menu swiper-no-swiping">
+							<a class="book__menu-item" href="">
+								<img src="/imgs/cart.svg">
+								<span>Предзаказ</span>
+							</a>
+							<a class="book__menu-item" href="/book.php">
 								<img src="/imgs/plus.svg">
 								<span>Узнать больше</span>
 							</a>
@@ -249,7 +259,7 @@
 			<div class="swiper-wrapper">
 				<article class="swiper-slide project">
 					<div class="image-container image-container_2_1">
-						<div class="project__background"></div>
+						<a href="/article.php" class="project__background"></a>
 						<img class="cover-image" src="/imgs/announcements-example.jpg">
 						<div class="project__panel">
 							<span class="project__title swiper-no-swiping">Sota school</span>
@@ -261,7 +271,7 @@
 				</article>
 				<article class="swiper-slide project">
 					<div class="image-container image-container_2_1">
-						<div class="project__background"></div>
+						<a href="/article.php" class="project__background"></a>
 						<img class="cover-image" src="/imgs/announcements-example.jpg">
 						<div class="project__panel">
 							<span class="project__title swiper-no-swiping">Sota school</span>
@@ -273,7 +283,7 @@
 				</article>
 				<article class="swiper-slide project">
 					<div class="image-container image-container_2_1">
-						<div class="project__background"></div>
+						<a href="/article.php" class="project__background"></a>
 						<img class="cover-image" src="/imgs/announcements-example.jpg">
 						<div class="project__panel">
 							<span class="project__title swiper-no-swiping">Sota school</span>
@@ -285,7 +295,7 @@
 				</article>
 				<article class="swiper-slide project">
 					<div class="image-container image-container_2_1">
-						<div class="project__background"></div>
+						<a href="/article.php" class="project__background"></a>
 						<img class="cover-image" src="/imgs/announcements-example.jpg">
 						<div class="project__panel">
 							<span class="project__title swiper-no-swiping">Sota school</span>
@@ -297,7 +307,7 @@
 				</article>
 				<article class="swiper-slide project">
 					<div class="image-container image-container_2_1">
-						<div class="project__background"></div>
+						<a href="/article.php" class="project__background"></a>
 						<img class="cover-image" src="/imgs/announcements-example.jpg">
 						<div class="project__panel">
 							<span class="project__title swiper-no-swiping">Sota school</span>
@@ -309,7 +319,7 @@
 				</article>
 				<article class="swiper-slide project">
 					<div class="image-container image-container_2_1">
-						<div class="project__background"></div>
+						<a href="/article.php" class="project__background"></a>
 						<img class="cover-image" src="/imgs/announcements-example.jpg">
 						<div class="project__panel">
 							<span class="project__title swiper-no-swiping">Sota school</span>
@@ -348,44 +358,48 @@
 			</div>
 			<div class="blog__content">
 				<article class="blog-item">
-					<div class="image-container image-container_8_5">
+					<a href="/article.php" 
+					class="image-container image-container_8_5 zoomable-image-container">
 						<img class="cover-image" src="/imgs/announcements-example.jpg">
-					</div>
+					</a>
 					<span class="blog-item__title">Lorem ipsum dolor sit amet</span>
 					<p class="blog-item__info paragraph">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
 					</p>
-					<a class="blog-item__link" href="/">подробнее</a>
+					<a class="blog-item__link" href="/article.php">подробнее</a>
 				</article>
 				<article class="blog-item">
-					<div class="image-container image-container_8_5">
+					<a href="/article.php" 
+					class="image-container image-container_8_5 zoomable-image-container">
 						<img class="cover-image" src="/imgs/announcements-example.jpg">
-					</div>
+					</a>
 					<span class="blog-item__title">Lorem ipsum dolor sit amet</span>
 					<p class="blog-item__info paragraph">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
 					</p>
-					<a class="blog-item__link" href="/">подробнее</a>
+					<a class="blog-item__link" href="/article.php">подробнее</a>
 				</article>
 				<article class="blog-item">
-					<div class="image-container image-container_8_5">
+					<a href="/article.php" 
+					class="image-container image-container_8_5 zoomable-image-container">
 						<img class="cover-image" src="/imgs/announcements-example.jpg">
-					</div>
+					</a>
 					<span class="blog-item__title">Lorem ipsum dolor sit amet</span>
 					<p class="blog-item__info paragraph">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
 					</p>
-					<a class="blog-item__link" href="/">подробнее</a>
+					<a class="blog-item__link" href="/article.php">подробнее</a>
 				</article>
 				<article class="blog-item">
-					<div class="image-container image-container_8_5">
+					<a href="/article.php" 
+					class="image-container image-container_8_5 zoomable-image-container">
 						<img class="cover-image" src="/imgs/announcements-example.jpg">
-					</div>
+					</a>
 					<span class="blog-item__title">Lorem ipsum dolor sit amet</span>
 					<p class="blog-item__info paragraph">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
 					</p>
-					<a class="blog-item__link" href="/">подробнее</a>
+					<a class="blog-item__link" href="/article.php">подробнее</a>
 				</article>
 			</div>
 		</div>
@@ -405,13 +419,14 @@
 					<article class="swiper-slide">
 						<div class="product">
 							<div class="product__image-container">
-								<div 
+								<a href="/article.php" 
 									class="image-container image-container_8_5 zoomable-image-container">
 									<img class="cover-image" src="/imgs/announcements-example.jpg">
-								</div>
+								</a>
 							</div>
 							<div class="product__info">
-								<span class="product__title swiper-no-swiping">SotA School</span>
+								<a href="/article.php" 
+								class="product__title swiper-no-swiping">SotA School</a>
 								<p class="product__text paragraph swiper-no-swiping">
 									Образовательный проект Анны Сотниковой, эксперта в ресторанном бизнесе. Лекции в SOTA school читают практикующие шеф-повара, управляющие ресторанов, маркетологи, финансисты и другие мастера, создающие первоклассный сервис. Запуск школы в 2021 г.
 								</p>							
@@ -421,12 +436,14 @@
 					<article class="swiper-slide">
 						<div class="product">
 							<div class="product__image-container">
-								<div class="image-container image-container_8_5 zoomable-image-container">
+								<a href="/article.php" 
+									class="image-container image-container_8_5 zoomable-image-container">
 									<img class="cover-image" src="/imgs/announcements-example.jpg">
-								</div>
+								</a>
 							</div>
 							<div class="product__info">
-								<span class="product__title swiper-no-swiping">SotA School</span>
+								<a href="/article.php" 
+								class="product__title swiper-no-swiping">SotA School</a>
 								<p class="product__text paragraph swiper-no-swiping">
 									Образовательный проект Анны Сотниковой, эксперта в ресторанном бизнесе. Лекции в SOTA school читают практикующие шеф-повара, управляющие ресторанов, маркетологи, финансисты и другие мастера, создающие первоклассный сервис. Запуск школы в 2021 г.
 								</p>							

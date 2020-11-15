@@ -82,9 +82,9 @@
 		</div>		
 		<section class="accordeon__content">
 			<div class="accordeon__item">
-				<div class="accordeon__title">
+				<div class="accordeon__title" onclick="toggle_accordeon(0)">
 					<span>Создание эффективной команды</span>
-					<i class="fal fa-long-arrow-down" onclick="toggle_accordeon(0)"></i>
+					<i class="fal fa-long-arrow-down"></i>
 				</div>
 				<div class="accordeon__list-container">
 					<ul class="accordeon__list">
@@ -107,9 +107,9 @@
 				</div>
 			</div>
 			<div class="accordeon__item">
-				<div class="accordeon__title">
+				<div class="accordeon__title" onclick="toggle_accordeon(1)">
 					<span>Как открыть ресторан с нуля</span>
-					<i class="fal fa-long-arrow-down" onclick="toggle_accordeon(1)"></i>
+					<i class="fal fa-long-arrow-down"></i>
 				</div>
 				<div class="accordeon__list-container">
 					<ul class="accordeon__list">
@@ -135,9 +135,9 @@
 				</div>
 			</div>
 			<div class="accordeon__item">
-				<div class="accordeon__title">
+				<div class="accordeon__title" onclick="toggle_accordeon(2)">
 					<span>Прибыль</span>
-					<i class="fal fa-long-arrow-down" onclick="toggle_accordeon(2)"></i>
+					<i class="fal fa-long-arrow-down"></i>
 				</div>
 				<div class="accordeon__list-container">
 					<ul class="accordeon__list">
@@ -172,9 +172,9 @@
 				</div>
 			</div>
 			<div class="accordeon__item">
-				<div class="accordeon__title">
+				<div class="accordeon__title" onclick="toggle_accordeon(3)">
 					<span>Управление сетевыми ресторанами</span>
-					<i class="fal fa-long-arrow-down" onclick="toggle_accordeon(3)"></i>
+					<i class="fal fa-long-arrow-down"></i>
 				</div>
 				<div class="accordeon__list-container">
 					<ul class="accordeon__list">
@@ -194,9 +194,9 @@
 				</div>
 			</div>
 			<div class="accordeon__item">
-				<div class="accordeon__title">
+				<div class="accordeon__title" onclick="toggle_accordeon(4)">
 					<span>Обучение управленческого персонала</span>
-					<i class="fal fa-long-arrow-down" onclick="toggle_accordeon(4)"></i>
+					<i class="fal fa-long-arrow-down"></i>
 				</div>
 				<div class="accordeon__list-container">
 					<ul class="accordeon__list">
@@ -228,9 +228,9 @@
 				</div>
 			</div>
 			<div class="accordeon__item">
-				<div class="accordeon__title">
+				<div class="accordeon__title" onclick="toggle_accordeon(5)">
 					<span>Бизнес и материнство</span>
-					<i class="fal fa-long-arrow-down" onclick="toggle_accordeon(5)"></i>
+					<i class="fal fa-long-arrow-down"></i>
 				</div>
 				<div class="accordeon__list-container">
 					<ul class="accordeon__list">
@@ -303,7 +303,7 @@
 					</p>
 				</div>
 				<div class="swiper-slide timeline-item">
-					<div class="timeline-item__year">начало 2008</div>
+					<div class="timeline-item__year">2008</div>
 					<div class="timeline-item__line"></div>
 					<p class="timeline-item__paragraph paragraph">
 						стала территориальной управляющей 6 ресторанов
