@@ -66,29 +66,29 @@
 				<span class="param__value">300</span>
 			</div>
 			<div class="param">
-				<span class="param__name">Страниц</span>
-				<span class="param__value">300</span>
+				<span class="param__name">Язык</span>
+				<span class="param__value">Русский	</span>
 			</div>
 			<div class="param">
-				<span class="param__name">Страниц</span>
-				<span class="param__value">300</span>
+				<span class="param__name">Год выпуска</span>
+				<span class="param__value">2020</span>
 			</div>
 			<div class="param">
-				<span class="param__name">Страниц</span>
-				<span class="param__value">300</span>
+				<span class="param__name">Издательство</span>
+				<span class="param__value">ЭКСМО</span>
 			</div>
 			<div class="param">
-				<span class="param__name">Страниц</span>
-				<span class="param__value">300</span>
+				<span class="param__name">Переплёт</span>
+				<span class="param__value">Твердый</span>
 			</div>
 			<div class="param">
+				<span class="param__name">Формат</span>
+				<span class="param__value">200x270x35 мм </span>
+			</div>
+			<!-- <div class="param">
 				<span class="param__name">Страниц</span>
 				<span class="param__value">300</span>
-			</div>
-			<div class="param">
-				<span class="param__name">Страниц</span>
-				<span class="param__value">300</span>
-			</div>
+			</div> -->
 		</div>
 	</section>
 

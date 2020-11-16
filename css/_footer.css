@@ -3,9 +3,41 @@ footer {
 }
 
 .footer__container {
+	position: relative;
 	margin-top: 72px;
+	
 	padding: 64px 0;
 	background-color: #F6F6F8;	
+}
+
+.footer__top-button {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: rgba(244, 211, 216, 0.6);
+}
+
+.footer__top-button::after {
+	content: '';
+
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	left: 50%;
+	top: 50%;
+	transform: rotate(-90deg) translate(50%, -50%);
+
+	background-image: url("/imgs/arrow-small.svg");
+	filter: invert(46%) sepia(93%) saturate(7373%) hue-rotate(346deg) brightness(82%) contrast(120%);
+	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
 }
 
 .footer__content {

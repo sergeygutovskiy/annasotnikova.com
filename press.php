@@ -251,12 +251,12 @@
 				active.hide();
 				$(".press__content[data-category='" + current.attr("data-category") + "']")
 					.css("display", "flex");
-			}, 300);
+			}, 350);
 
 			setTimeout(function() {
 				$(".press__content[data-category='" + current.attr("data-category") + "']")
 					.addClass("press__content--active");
-			}, 330);
+			}, 380);
 		});
 	</script>
 

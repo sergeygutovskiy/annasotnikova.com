@@ -1,7 +1,7 @@
 <meta content="width=device-width, initial-scale=1" name="viewport" />
 
 <!-- jquery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <!-- swiper -->
 <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

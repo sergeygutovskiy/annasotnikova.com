@@ -1,6 +1,7 @@
 <!-- footer -->
 <footer>
 	<div class="footer__container">
+		<button class="footer__top-button"></button>
 		<div class="container">
 			<div class="footer__content">
 				<div class="footer__left">
@@ -43,3 +44,13 @@
 		</div>		
 	</div>
 </footer>
+
+<script>
+	let scrollTopSpeed = 0;
+	scrollTopSpeed = Math.floor(document.body.clientHeight / 1000);
+	console.log(scrollTopSpeed);
+
+	$(".footer__top-button").click(function() {
+		$("html").animate({ scrollTop: 0 }, 600 + 100 * scrollTopSpeed);
+	});
+</script>
