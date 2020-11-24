@@ -12,6 +12,15 @@
 <!-- cormorant -->
 <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&display=swap" rel="stylesheet">
 
+<link rel="preload" as="font" 
+	href="/fonts/Aire_Roman_Pro.otf" 
+	type="font/otf" 
+	crossorigin="anonymous">
+<link rel="preload" as="font" 
+	href="/fonts/Aire_Roman_Std.otf" 
+	type="font/otf" 
+	crossorigin="anonymous">
+
 <link rel="stylesheet" type="text/css" href="css/bundle.css">
 
 <!-- js scripts -->

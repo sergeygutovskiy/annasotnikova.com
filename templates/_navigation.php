@@ -65,7 +65,8 @@
 </nav>
 
 <script>
-	$(".nav__search a").click(function () {
+	$(".nav__search a").click(function (e) {
+		e.preventDefault();
 		$(".nav__search-input").toggleClass("nav__search-input--active");
 	});
 

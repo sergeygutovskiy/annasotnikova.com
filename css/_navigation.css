@@ -91,7 +91,7 @@ nav {
 	padding-top: 0;
 	
 	border: none;
-	border-bottom: solid 1px #1C1C1B;
+	border-bottom: solid 1px var(--color-grey);
 	background-color: transparent;
 
 	color: var(--color-grey);
