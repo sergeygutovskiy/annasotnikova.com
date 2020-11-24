@@ -2,7 +2,7 @@
 <nav>
 	<section class="container nav__container">
 		<div class="nav__language">
-			<a href="/" class="active">RU</a>
+			<a href="/">RU</a>
 			<a href="/">EN</a>
 		</div>
 		<div class="nav__location">
@@ -10,10 +10,10 @@
 			Санкт-Петербург
 		</div>
 		<div class="nav__right">
-			<div class="nav__search">
+			<form class="nav__search">
 				<input type="text" class="nav__search-input" placeholder="Поиск">
 				<a href="#"><img src="/imgs/pupa.png"></a>
-			</div>
+			</form>
 			<div class="nav__account">
 				<a href="#"><img src="/imgs/account.jpg"></a>
 			</div>
@@ -69,26 +69,39 @@
 		$(".nav__search-input").toggleClass("nav__search-input--active");
 	});
 
+	function open_nav_menu() 
+	{
+		$("nav").addClass("nav_mobile--active");
+		$(".nav-menu").addClass("nav-menu--active");
+		$(".nav__menu-button").addClass("nav__menu-button--active");
+
+		$(".nav-blur").show();
+		setTimeout(
+			function() { $(".nav-blur").addClass("nav-blur--active") }, 5
+		);		
+	}
+
+	function close_nav_menu()
+	{
+		$("nav").removeClass("nav_mobile--active");
+		$(".nav-menu").removeClass("nav-menu--active");
+		$(".nav__menu-button").removeClass("nav__menu-button--active");
+
+		$(".nav-blur").removeClass("nav-blur--active");
+		setTimeout(
+			function() { $(".nav-blur").hide() }, 250
+		);		
+	}
+
 	$(".nav__menu-button").click(function () {
-		$(".nav-menu").toggleClass("nav-menu--active");
-		$(".nav__menu-button").toggleClass("nav__menu-button--active");
-
-		$("nav").toggleClass("nav_mobile--active");
-
 		if ($(".nav-blur").hasClass("nav-blur--active"))
-		{
-			$(".nav-blur").removeClass("nav-blur--active");
-			setTimeout(
-				function() { $(".nav-blur").hide() }, 250
-			);
-		}
+			close_nav_menu();
 		else
-		{
-			$(".nav-blur").show();
-			setTimeout(
-				function() { $(".nav-blur").addClass("nav-blur--active") }, 5
-			);
-		}
+			open_nav_menu();
+	});
+
+	$(".nav-blur").click(function() {
+		close_nav_menu();
 	});
 
 	/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
@@ -100,15 +113,21 @@
 		if (!$(".nav-blur").hasClass("nav-blur--active"))
 		{
 			if (prevScrollpos > currentScrollPos) 
-			{
 				$("nav").removeClass("nav--hidden");
-			} 
 			else 
-			{
 				$("nav").addClass("nav--hidden");
-			}
 		}
 
 		prevScrollpos = currentScrollPos;
 	}
+
+	$(".nav__language a").eq(0).addClass("active");
+
+	$(".nav__language a").click(function(e) {
+		e.preventDefault();
+
+		$(".nav__language a.active").removeClass("active");
+		$(this).toggleClass("active");
+	});
+
 </script>

@@ -11,7 +11,7 @@
 	<?php require 'templates/_navigation.php'; ?>
 
 	<!-- logo -->
-	<section class="about-container">
+	<section class="about-container about-logo-container">
 		<img class="about-logo" src="/imgs/logo.png">	
 	</section>
 

@@ -7,6 +7,12 @@
 	padding: 0 80px;
 }
 
+.about-logo-container {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 @media screen and (max-width: 1460px) 
 {
 	.about-container {

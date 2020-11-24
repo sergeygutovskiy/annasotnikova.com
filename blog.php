@@ -11,7 +11,7 @@
 	<?php require 'templates/_navigation.php'; ?>
 
 	<!-- logo -->
-	<section class="blog-container">
+	<section class="blog-container blog-logo-container">
 		<img class="blog-logo" src="/imgs/logo.png">	
 	</section>
 
@@ -30,7 +30,7 @@
 		<div class="blog__content">
 			<article class="blog-item">
 				<a href="/article.php" 
-				class="image-container image-container_8_5 zoomable-image-container">
+				class="image-container image-container_8_5">
 					<img class="cover-image" src="/imgs/announcements-example.jpg">
 				</a>
 				<span class="blog-item__title">Lorem ipsum dolor sit amet</span>
@@ -41,7 +41,7 @@
 			</article>
 			<article class="blog-item">
 				<a href="/article.php" 
-				class="image-container image-container_8_5 zoomable-image-container">
+				class="image-container image-container_8_5">
 					<img class="cover-image" src="/imgs/announcements-example.jpg">
 				</a>
 				<span class="blog-item__title">Lorem ipsum dolor sit amet</span>
@@ -52,7 +52,7 @@
 			</article>
 			<article class="blog-item">
 				<a href="/article.php" 
-				class="image-container image-container_8_5 zoomable-image-container">
+				class="image-container image-container_8_5">
 					<img class="cover-image" src="/imgs/announcements-example.jpg">
 				</a>
 				<span class="blog-item__title">Lorem ipsum dolor sit amet</span>
@@ -63,7 +63,7 @@
 			</article>
 			<article class="blog-item">
 				<a href="/article.php" 
-				class="image-container image-container_8_5 zoomable-image-container">
+				class="image-container image-container_8_5">
 					<img class="cover-image" src="/imgs/announcements-example.jpg">
 				</a>
 				<span class="blog-item__title">Lorem ipsum dolor sit amet</span>

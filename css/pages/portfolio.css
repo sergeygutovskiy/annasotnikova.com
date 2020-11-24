@@ -7,6 +7,12 @@
 	padding: 0 80px;
 }
 
+.portfolio-logo-container {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 .portfolio-logo {
 	position: absolute;
 	top: -48px;
@@ -219,6 +225,12 @@ header {
 	text-transform: uppercase;
 
 	max-width: calc(100% - 80px);
+
+	transition: all 150ms linear;
+}
+
+.portfolio-item__title:hover {
+	color: var(--color-red);
 }
 
 .portfolio-item__price {

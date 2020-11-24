@@ -9,7 +9,7 @@
 	<!-- navigation -->
 	<?php require 'templates/_navigation.php'; ?>
 
-	<section class="article-container">
+	<section class="article-container article-logo-container">
 		<img class="article-logo" src="/imgs/logo.png">
 	</section>
 

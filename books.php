@@ -11,7 +11,7 @@
 	<?php require 'templates/_navigation.php'; ?>
 
 	<!-- logo -->
-	<section class="books-container">
+	<section class="books-container books-logo-container">
 		<img class="books-logo" src="/imgs/logo.png">	
 	</section>
 

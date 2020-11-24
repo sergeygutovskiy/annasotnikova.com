@@ -11,7 +11,7 @@
 	<?php require 'templates/_navigation.php'; ?>
 
 	<!-- logo -->
-	<section class="press-container">
+	<section class="press-container press-logo-container">
 		<img class="press-logo" src="/imgs/logo.png">	
 	</section>
 

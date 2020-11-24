@@ -7,6 +7,12 @@
 	padding: 0 80px;
 }
 
+.blog-logo-container {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 .blog-logo {
 	position: absolute;
 	top: -48px;
@@ -67,12 +73,13 @@ header {
 	border-radius: 12px;
 	transition: all 150ms linear;
 
-	box-shadow: 0px 5px 15px rgba(8, 24, 81, 0.15);
+	/*box-shadow: 0px 5px 15px rgba(8, 24, 81, 0.15);*/
 }
 
 .blog-item:hover {
 	transform: translateY(-8px);
-	box-shadow: 0px 10px 30px rgba(8, 24, 81, 0.15);
+	/*box-shadow: 0px 10px 30px rgba(8, 24, 81, 0.15);*/
+	box-shadow: 0px 5px 15px rgba(8, 24, 81, 0.15);
 }
 
 .blog-item:hover .blog-item__link {

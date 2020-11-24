@@ -7,6 +7,12 @@
 	padding: 0 80px;
 }
 
+.press-logo-container {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 .press-logo {
 	position: absolute;
 	top: -48px;
@@ -165,7 +171,8 @@ header {
 	transform: translateY(-32px);
 
 	width: calc(100% - 24px * 2 - 16px *  2);
-	padding: 4px 8px;
+	padding: 8px;
+	padding-top: 16px;
 
 	text-align: center;
 	background-color: white;
@@ -188,13 +195,19 @@ header {
 }
 
 .press-item__title {
-	margin-top: 24px;
+	margin-top: 12px;
 	display: block;
 
 	font-size: 18px;
 	line-height: 26px;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
+
+	transition: all 150ms linear;
+}
+
+.press-item__title:hover {
+	color: var(--color-red);
 }
 
 .press-item__date {

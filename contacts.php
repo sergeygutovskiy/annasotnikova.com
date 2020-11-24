@@ -9,7 +9,7 @@
 	<!-- navigation -->
 	<?php require 'templates/_navigation.php'; ?>
 
-	<section class="contacts-container">
+	<section class="contacts-container contacts-logo-container">
 		<img class="contacts-logo" src="/imgs/logo.png">
 	</section>
 

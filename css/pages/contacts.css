@@ -6,6 +6,12 @@
 	width: 100%;
 }
 
+.contacts-logo-container {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 .contacts-logo {
 	position: absolute;
 	top: -48px;

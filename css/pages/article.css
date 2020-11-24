@@ -6,6 +6,12 @@
 	width: 100%;
 }
 
+.article-logo-container {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 .article-logo {
 	position: absolute;
 	top: -48px;
