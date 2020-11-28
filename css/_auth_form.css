@@ -13,7 +13,7 @@
 }
 
 .form_head {
-	background: #F6F6F8;
+	background: #F6F6F8 !important;
 }
 
 .form-tab-rcl {
@@ -31,20 +31,19 @@
 .form_auth, .form_reg {
 	font-weight: 400;
 	font-size: 16px;
-	padding: 24px 0;
+	padding: 24px 0 !important;
 	line-height: 16px;
-}
-
-.form_active {
-	 background: #F6F6F8 !important; 
+	border: none;
 }
 
 .form_auth.form_active {
 	border-top-right-radius: 16px;
+	background: white !important;
 }
 
 .form_reg.form_active {
 	border-top-left-radius: 16px;
+	background: white !important;
 }
 
 .panel_lk_recall .default-field input {
@@ -68,8 +67,12 @@
 	border-radius: 5px;
 }
 
-.rcl-bttn.rcl-bttn__type-primary.rcl-bttn__size-medium.rcl-bttn__fullwidth i {
-	display: none;
+.panel_lk_recall .default-field input i {
+	display: none !important;
+}
+
+.panel_lk_recall .form-block-rcl .required {
+	top: 4px !important;
 }
 
 .form-tab-rcl form {
@@ -77,5 +80,20 @@
 }
 
 .panel_lk_recall .form-block-rcl {
-    margin: 0;
+	margin: 0;
+}
+
+.rcl-bttn__text {
+	padding: 0 !important;
+}
+
+a.link-remember-rcl.link-tab-rcl {
+	display: none !important;
+}
+
+@media screen and (max-width: 768px)
+{
+	.rcl-loginform {
+		width: calc(100% - 24px);
+	}
 }
