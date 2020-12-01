@@ -29,11 +29,11 @@
 	<section class="projects-container">
 		<div class="projects">
 			<article class="project">
-				<div class="project__image-container">
+				<a class="project__image-container">
 					<div class="image-container image-container_8_5 zoomable-image-container">
 						<img class="cover-image" src="/imgs/announcements-example.jpg">
 					</div>
-				</div>
+				</a>
 				<div class="project__info">
 					<a href="/article.php" class="project__title">Дети на кухне</a>
 					<p class="project__paragraph paragraph">
@@ -46,11 +46,11 @@
 				</div>
 			</article>
 			<article class="project">
-				<div class="project__image-container">
+				<a class="project__image-container">
 					<div class="image-container image-container_8_5 zoomable-image-container">
 						<img class="cover-image" src="/imgs/announcements-example.jpg">
 					</div>
-				</div>
+				</a>
 				<div class="project__info">
 					<a href="/article.php" class="project__title">Дети на кухне</a>
 					<p class="project__paragraph paragraph">
@@ -63,11 +63,11 @@
 				</div>
 			</article>
 			<article class="project">
-				<div class="project__image-container">
+				<a class="project__image-container">
 					<div class="image-container image-container_8_5 zoomable-image-container">
 						<img class="cover-image" src="/imgs/announcements-example.jpg">
 					</div>
-				</div>
+				</a>
 				<div class="project__info">
 					<a href="/article.php" class="project__title">Дети на кухне</a>
 					<p class="project__paragraph paragraph">
